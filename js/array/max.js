@@ -1,4 +1,4 @@
-if (![].max) {
+if ((![].max) || typeof [].max !== 'function') {
 
   /**
   * Extends the Array object with a .max() method

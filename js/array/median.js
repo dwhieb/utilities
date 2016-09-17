@@ -1,4 +1,4 @@
-if (![].median) {
+if ((![].median) || typeof [].median !== 'function') {
 
   /**
    * Array.prototype.median()

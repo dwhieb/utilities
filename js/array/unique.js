@@ -1,4 +1,4 @@
-if (![].unique) {
+if ((![].unique) || typeof [].unique !== 'function') {
 
   /**
    * Array.prototype.unique()

@@ -1,4 +1,4 @@
-if (![].min) {
+if ((![].min) || typeof [].min !== 'function') {
 
   /**
   * Extends the Array object with a .min() method

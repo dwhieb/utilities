@@ -1,4 +1,4 @@
-if (![].sum) {
+if ((![].sum) || typeof [].sum !== 'function') {
 
   /**
    * Array.prototype.sum()

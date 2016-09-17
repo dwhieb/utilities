@@ -1,4 +1,4 @@
-if (![].mean) {
+if ((![].mean) || typeof [].mean !== 'function') {
 
   /**
   * Array.prototype.mean()

@@ -28,4 +28,4 @@ const runGenerator = (generator, generatorArgs) => new Promise(resolve => {
   }());
 });
 
-module.exports = runGenerator;
+export default runGenerator;

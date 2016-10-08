@@ -9,5 +9,4 @@ module.exports = {
   },
 
   createHex:    require('./createHex'),
-  runGenerator: require('./runGenerator'),
 };

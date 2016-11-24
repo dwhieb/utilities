@@ -1,3 +1,4 @@
+// documentation here: https://davidwalsh.name/javascript-debounce-function
 const debounce = (func, wait, immediate) => {
 
   let timeout;

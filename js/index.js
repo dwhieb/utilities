@@ -1,15 +1,14 @@
-import capitalize from 'capitalize';
-import createElement from 'createElement';
-import debounce from 'debounce';
-import downloadJSON from 'downloadJSON';
-import getDateStrings from 'getDateStrings';
-import runGenerator from 'runGenerator';
+import array from './array';
+
+import capitalize from './capitalize.js';
+import debounce from './debounce.js';
+import getDateStrings from './getDateStrings.js';
+import testAsync from './testAsync.js';
 
 export default {
+  array,
   capitalize,
-  createElement,
   debounce,
-  downloadJSON,
   getDateStrings,
-  runGenerator,
+  testAsync,
 };

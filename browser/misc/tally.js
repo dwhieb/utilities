@@ -1,4 +1,4 @@
-(function() {
+const tally = function() {
 
   const perfect = [
     `Perfect score! Woohoo!`,
@@ -22,18 +22,28 @@
   ];
 
   // variables
-  const parts  = 7;
-  const total  = 20;
+  const parts  = 6;
+  const total  = 15;
   const regexp = new RegExp(/[0-9]{1,2}(\.[0-9]{1,2})? \/ [0-9]{1,2}/g); // e.g. 1.25 / 4
 
   // run script
-  const editor = document.getElementById(`id_assignfeedbackcomments_editoreditable`);
-  const text   = editor.innerText;
+  const editor  = document.getElementById(`id_assignfeedbackcomments_editoreditable`);
+  const text    = editor.innerText;
   const matches = text.match(regexp);
 
   if (matches.length !== parts) {
     console.log(matches);
     throw new Error(`Wrong number of matches.`);
+  }
+
+  const calculatedTotal = matches
+    .map(mark => mark.split(` `)[2])
+    .map(mark => Number(mark))
+    .reduce((a, b) => a + b, 0);
+
+  if (calculatedTotal !== total) {
+    console.log(`Calculated Total: ${calculatedTotal}`);
+    throw new Error(`Incorrect points total.`);
   }
 
   const points = matches
@@ -67,4 +77,6 @@
 
   }
 
-})();
+};
+
+tally();

@@ -6,10 +6,12 @@
     "ecmaVersion": 2017,
     "ecmaFeatures": {
       "impliedStrict": true
-    }
+    },
+    "sourceType": "module"
   },
 
   "env": {
+    "browser": true,
     "es6": true,
     "jasmine": true,
     "node": true

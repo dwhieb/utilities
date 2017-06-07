@@ -3,7 +3,7 @@ const http    = require('http');
 
 const app  = express();
 // use a unique port so that the service worker doesn't interfere with other projects
-const port = 3000;
+const port = 3001;
 const folder = process.argv[2] || '.';
 
 app.set('port', port);

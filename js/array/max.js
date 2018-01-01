@@ -7,7 +7,7 @@ if ((![].max) || typeof [].max !== 'function') {
   */
   Array.prototype.max = function max() {
     const arr = this.filter(val => val);
-    return Math.max.apply(Math, arr);
+    return Math.max(...arr);
   };
 
 }

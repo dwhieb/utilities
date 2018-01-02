@@ -2,6 +2,7 @@
 
 A checklist for planning, developing, and publishing a release, from start to finish.
 
+**Pre-Coding**
 * Open an issue
 * Label issue
 * Triage issue
@@ -20,8 +21,17 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Update internal documentation (code commenting)
 * Revise external documentation (README)
 
+**Post-Coding**
 * Increment version number & Add comment closing the issue
 * Create pull request
+* Add release notes
+  - CHANGE
+  - DEPS
+  - DOCS
+  - FIX
+  - NEW
+  - PERF
+  - TEST
 * Code review
 * Address code review comments (repeat Coding steps)
 * Merge pull request

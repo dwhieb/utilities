@@ -31,7 +31,7 @@ A checklist for server-side projects using Node (& Express).
 
 - [ ] Use Nodemon (with `--inspect` flag)
 
-- [ ] Use environment variables (`process.env.NODE_ENV=production|development|local`)
+- [ ] Use environment variables (`process.env.NODE_ENV=production|development|localhost`)
 
 - [ ] Update dependencies
   - npm
@@ -149,7 +149,7 @@ A checklist for server-side projects using Node (& Express).
 ## Performance
 
 - [ ] Don't serve static files from Node
-  - Option 1: Use a CDN
+  - Option 1: Use a CDN / Blob Storage
   - Option 2: Proxy server
 
 ## Security

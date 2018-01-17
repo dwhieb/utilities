@@ -1,9 +1,15 @@
-// documentation here: https://davidwalsh.name/javascript-debounce-function
-export default (func, wait, immediate) => {
+/**
+ * A debounce function. Documentation: https://davidwalsh.name/javascript-debounce-function
+ * @param  {Function} func      The function to debounce
+ * @param  {Number}   wait      The time to wait, in milliseconds
+ * @param  {Boolean}  immediate Whether to invoke the function immediately
+ * @return {Function}
+ */
+export default function debounce(func, wait, immediate) {
 
   let timeout;
 
-  return function debounce(...args) {
+  return function debounced(...args) {
 
     const later = () => {
       timeout = null;
@@ -19,4 +25,4 @@ export default (func, wait, immediate) => {
 
   };
 
-};
+}

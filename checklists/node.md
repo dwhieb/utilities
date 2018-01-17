@@ -74,7 +74,7 @@ A checklist for server-side projects using Node (& Express).
   - time: `new Date().toISOString()`
   - method: `req.method`
   - original URL: `req.originalURL`
-  - # of bytes sent: `res.get('Content-Length')`
+  - \# of bytes sent: `res.get('Content-Length')`
   - client version: `req.get('X-ClientVersion')`
   - platform version: `req.get('X-ClientPlatformVersion')`
   - device: `req.get('X-ClientDevice')`

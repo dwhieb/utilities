@@ -21,6 +21,9 @@ A checklist for planning, developing, and publishing a release, from start to fi
   - unit tests
   - functional tests
   - online/offline tests
+  - accessibility tests
+    - tab / keyboard navigation and interaction
+    - text resizing (up to 200%)
   - performance tests
     - custom performance tests
     - Lighthouse

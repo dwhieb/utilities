@@ -50,10 +50,11 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Repeat tests as needed
 
 **Post-Coding**
+* Stop nodemon
 * Increment version number & add comment closing the issue
 * Update environment variables on Travis CI, development, and production server
 * Create pull request from issue branch into `dev` / `master`
-* Add commit message (each commit to `dev` should have one of these)
+* Add commit message (each commit to `dev` should have one of these, and an issue number)
   - CHANGE
   - DEPS
   - DEV
@@ -66,7 +67,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Address code review comments (repeat **Coding** steps)
 * Merge pull request into `dev` / `master`
 * Repeat testing on development server
-* Project Board: Done
+* Project Board: Completed
 * Open a pull request from `dev` into `master`
 * Add commit message (name & version number)
 * Merge pull request into `master`

@@ -20,6 +20,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Performance testing
 * Update internal documentation (code commenting)
 * Revise external documentation (README)
+* Check for typos (see Typos Checklist)
 
 **Post-Coding**
 * Increment version number & Add comment closing the issue

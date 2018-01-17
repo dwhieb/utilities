@@ -10,14 +10,14 @@ A checklist for writing README files. Items appear roughly in the order they sho
 - [ ] Owner / Author & License
 - [ ] Citation
 - [ ] Badges
-  - [ ] GitHub forks
-  - [ ] GitHub issues
-  - [ ] GitHub stars
-  - [ ] license
+  - [ ] version / release
   - [ ] npm downloads
   - [ ] test status (Travis CI)
+  - [ ] GitHub issues
+  - [ ] license
   - [ ] Zenodo
-  - [ ] version / release
+  - [ ] GitHub stars
+  - [ ] GitHub forks
 - [ ] Table of Contents - include links
 - [ ] Explanation / Philosophy / Overview
 - [ ] Getting Started / Quick Start - with example code

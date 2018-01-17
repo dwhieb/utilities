@@ -1,10 +1,10 @@
 /**
  * Initiates download of specified data as a JSON text file
  * @function downloadJSON
- * @param  {Object}     [data={}]              The data to download
- * @param  {String}     [filename='data.json'] The name to give the file when it downloads.
+ * @param  {Object} [data={}]              The data to download
+ * @param  {String} [filename='data.json'] The name to give the file when it downloads.
  */
-export default (data = {}, filename = `data.json`) => {
+export default function downloadJSON(data = {}, filename = `data.json`) {
 
   const text = JSON.stringify(data, null, 2);
 
@@ -28,4 +28,4 @@ export default (data = {}, filename = `data.json`) => {
 
   }
 
-};
+}

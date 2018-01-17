@@ -1,26 +1,13 @@
-const cacheName = `dlx-tools`;
+/**
+ * A web worker that caches network responses for the specified files, and preferably returns assets from the cache rather than the network for future responses, with a network fallback if the item is unavailable in the cache.
+ */
 
+// The name of the cache
+const cacheName = `cache-name`;
+
+// The list of files to cache
 const files = [
   `/`,
-  `/css/tools.css`,
-  `/fonts/FiraSans-Light.ttf`,
-  `/fonts/FiraSans-Light.woff`,
-  `/fonts/FiraSans-Light.woff2`,
-  `/fonts/FiraSans-Medium.ttf`,
-  `/fonts/FiraSans-Medium.woff`,
-  `/fonts/FiraSans-Medium.woff2`,
-  `/fonts/GentiumPlus-R.ttf`,
-  `/fonts/GentiumPlus-R.woff`,
-  `/fonts/GentiumPlus-R.woff2`,
-  `/img/wugbot.ico`,
-  `/img/wugbot.svg`,
-  `/img/x-circle.svg`,
-  `/index.html`,
-  `/js/dlx.js`,
-  `/js/mousetrap.js`,
-  `/transliterator`,
-  `/transliterator/index.html`,
-  `/transliterator/transliterator-compiled.js`,
 ];
 
 // add the files in the "files" array to the cache

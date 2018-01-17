@@ -27,6 +27,17 @@ A checklist for server-side projects using Node (& Express).
   - Node Version (`Node`)
   - Environment (`Env`)
 
+## Development
+
+- [ ] Use Nodemon (with `--inspect` flag)
+
+- [ ] Use environment variables (`process.env.NODE_ENV=production|development|local`)
+
+- [ ] Update dependencies
+  - npm
+  - Node
+  - npm packages
+
 ## Express Settings
 
 - [ ] Trust proxy
@@ -49,7 +60,9 @@ A checklist for server-side projects using Node (& Express).
 
 ## Logging & Error Handling
 
-- [ ] Persistent error logging (e.g. Application Insights, )
+- [ ] Monitoring (e.g. Application Insights)
+  - uptime
+  - memory (watch for leaks)
 
 - [ ] Log requests (at beginning of waterfall, but after static files)
 
@@ -132,6 +145,12 @@ A checklist for server-side projects using Node (& Express).
 
 - [ ] The `"main"` field should point to the entry point for the app (usually `app.js`)
 - [ ] Node engines should be specified in the `"engines"` field
+
+## Performance
+
+- [ ] Don't serve static files from Node
+  - Option 1: Use a CDN
+  - Option 2: Proxy server
 
 ## Security
 

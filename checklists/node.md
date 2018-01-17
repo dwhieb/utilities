@@ -31,7 +31,11 @@ A checklist for server-side projects using Node (& Express).
 
 - [ ] Use Nodemon (with `--inspect` flag)
 
-- [ ] Use environment variables (`process.env.NODE_ENV=production|development|localhost`)
+- [ ] Use environment variables (`process.env.NODE_ENV=production|development|testing|localhost`)
+  - `production` = production server
+  - `testing` = Travis CI
+  - `localhost` = local testing
+  - `development` = development server
 
 - [ ] Update dependencies
   - npm

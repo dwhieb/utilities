@@ -5,6 +5,9 @@ A checklist for planning, developing, and publishing a release, from start to fi
 ## Notes
 * Not currently using milestones
 * Run tests in all applicable browsers
+* Keep a continuous `dev` branch
+* Only use Squash & Merge commits for `master` branch
+* Do not allow commits to the `master` branch without an override
 
 **Pre-Coding**
 * Open an issue
@@ -12,11 +15,16 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Triage issue on the project board
 * Project Board: To Do
 * Project Board: In Progress
-* Create issue branch
+* Create issue branch (from `dev`)
 
 **Coding**
 * Update external documentation with planned changes (README)
 * Debug with Chrome Dev Tools (use `--inspect` flag with Node)
+* Update dependencies
+  - [ ] npm
+  - [ ] Node
+  - [ ] npm packages
+  - [ ] other third-party scripts
 * Write tests
   - unit tests
   - functional tests
@@ -31,11 +39,10 @@ A checklist for planning, developing, and publishing a release, from start to fi
     - security audit
     - Chrome audits
 * Write code to pass tests / for performance improvements
-* Check for accessibility (see [Accessibility Checklist][1])
+* Run through relevant [checklists][1]
 * Remove any test-related code
 * Update internal documentation (code commenting)
 * Revise external documentation (README)
-* Check for typos (see [Typos Checklist][2])
 * Run build process, potentially including
   - transpile JS (Babel)
   - bundle modules (Webpack)
@@ -46,6 +53,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
 
 **Post-Coding**
 * Increment version number & add comment closing the issue
+* Update environment variables on Travis CI, development, and production server
 * Create pull request from issue branch into `dev` / `master`
 * Add release notes
   - CHANGE
@@ -70,5 +78,4 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Update website
 * Write a blog post
 
-[1]: https://github.com/dwhieb/utilities/blob/master/checklists/accessibility.md
-[2]: https://github.com/dwhieb/utilities/blob/master/checklists/typos.md
+[1]: https://github.com/dwhieb/utilities/tree/master/checklists

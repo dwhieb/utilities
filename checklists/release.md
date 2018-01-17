@@ -56,6 +56,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Add release notes
   - CHANGE
   - DEPS
+  - DEV
   - DOCS
   - FIX
   - NEW

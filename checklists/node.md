@@ -59,7 +59,7 @@ A checklist for server-side projects using Node (& Express).
 - [ ] static files:
 
   ```js
-  express.static(path.join(__dirname, `/public`));
+  app.use(express.static(path.join(__dirname, `/public`)));
   ```
 
 ## Logging & Error Handling

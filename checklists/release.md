@@ -53,7 +53,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Increment version number & add comment closing the issue
 * Update environment variables on Travis CI, development, and production server
 * Create pull request from issue branch into `dev` / `master`
-* Add release notes
+* Add commit message (each commit to `dev` should have one of these)
   - CHANGE
   - DEPS
   - DEV
@@ -68,6 +68,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Repeat testing on development server
 * Project Board: Done
 * Open a pull request from `dev` into `master`
+* Add commit message (name & version number)
 * Merge pull request into `master`
 * Repeat testing on production
 * Create GitHub release

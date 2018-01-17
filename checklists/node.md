@@ -2,11 +2,6 @@
 
 A checklist for server-side projects using Node (& Express).
 
-## package.json
-
-- [ ] The `"main"` field should point to the entry point for the app (usually `app.js`)
-- [ ] Node engines should be specified in the `"engines"` field
-
 ## app.js
 
 - [ ] Do initialization / configuration in separate files, which then export the ready-to-use object. Some possible cases:
@@ -45,22 +40,6 @@ A checklist for server-side projects using Node (& Express).
   ```js
   app.engine(extname, handlebars.engine);
   ```
-
-## Express Middleware
-
-- [ ] async middleware (to catch async errors)
-
-  ```js
-  const catchAsyncErrors = fn => (req, res, next) => {
-    Promise.resolve(fn(req, res, next)).catch(next);
-  };
-  ```
-
-- [ ] authentication (e.g. Passport)
-
-- [ ] rate limiting (e.g. express-rate-limit)
-
-- [ ] security (e.g. helmet)
 
 - [ ] static files:
 
@@ -123,6 +102,14 @@ A checklist for server-side projects using Node (& Express).
   };
   ```
 
+- [ ] async middleware (to catch async errors)
+
+  ```js
+  const catchAsyncErrors = fn => (req, res, next) => {
+    Promise.resolve(fn(req, res, next)).catch(next);
+  };
+  ```
+
 - [ ] Generic error handler for server
 
   ```js
@@ -140,5 +127,17 @@ A checklist for server-side projects using Node (& Express).
 - [ ] Provide an option to console log requested URL with an environment variable
 
   - The log should happen after static files are sent
+
+## package.json
+
+- [ ] The `"main"` field should point to the entry point for the app (usually `app.js`)
+- [ ] Node engines should be specified in the `"engines"` field
+
+## Security
+
+- [ ] authentication (e.g. Passport)
+- [ ] Force HTTPS
+- [ ] rate limiting (e.g. express-rate-limit)
+- [ ] security middleware (e.g. helmet)
 
 [1]: https://www.npmjs.com/package/boom

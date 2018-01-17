@@ -31,6 +31,8 @@ A checklist for writing README files. Items appear roughly in the order they sho
 - [ ] Repository Contents / Structure
 - [ ] Versioning
 - [ ] Tests
+  - List of supported browsers
+  - List of supported Node versions
 - [ ] Contributing ([CONTRIBUTING checklist](https://github.com/dwhieb/utilities/blob/master/checklists/contributing.md))
 - [ ] Maintainers
 - [ ] Code of Conduct

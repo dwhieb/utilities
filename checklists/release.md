@@ -4,12 +4,11 @@ A checklist for planning, developing, and publishing a release, from start to fi
 
 ## Notes
 * Not currently using milestones
-* Run tests in all applicable browsers
 * Keep a continuous `dev` branch
 * Only use Squash & Merge commits for `master` branch
 * Do not allow commits to the `master` branch without an override
 
-**Pre-Coding**
+## Pre-Coding
 * Open an issue
 * Label issue
 * Triage issue on the project board
@@ -17,7 +16,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Project Board: In Progress
 * Create issue branch (from `dev`)
 
-**Coding**
+## Coding
 * Update external documentation with planned changes (README)
 * Debug with Chrome Dev Tools (use `--inspect` flag with Node)
 * Update dependencies
@@ -37,6 +36,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
     - security audit
     - Chrome audits
 * Write code to pass tests / for performance improvements
+  - Run tests in all applicable browsers
 * Run through relevant [checklists][1]
 * Remove any test-related code
 * Update internal documentation (code commenting)
@@ -49,7 +49,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
   - create documentation (JSDoc)
 * Repeat tests as needed
 
-**Post-Coding**
+## Post-Coding
 * Stop nodemon
 * Increment version number & add comment closing the issue
 * Update environment variables on Travis CI, development, and production server

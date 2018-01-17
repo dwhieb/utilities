@@ -1,34 +1,37 @@
-const express = require('C:/Users/dwhieb/AppData/Roaming/npm/node_modules/express');
-const http    = require('http');
+/*
+This script runs a local server for serving static files from a folder. It can be run as a module or from the command line. Usage from command line:
 
-const defaultPort   = process.argv[3] || 3000;
-const defaultFolder = process.argv[2] || '.';
+node server.js [rootPath='.'] [port=3000]
+*/
 
-const start = ({ port = defaultPort, folder = defaultFolder } = {}) => {
+const StaticServer = require('C:/Users/dwhieb/AppData/Roaming/npm/node_modules/static-server');
 
-  const app = express();
+const rootPath = process.argv[2] || '.';  // the root folder the files will be served from
+const port     = process.argv[3] || 3000; // the port to use
 
-  app.set('port', port);
-  app.use((req, res, next) => {
-    res.set(`Service-Worker-Allowed`, `/`);
-    next();
-  });
-  app.use(express.static(folder));
+// Allow CORS
+const server = new StaticServer({
+  cors: '*',
+  port,
+  rootPath,
+});
 
-  const server = http.createServer(app).listen(port, () => {
-    console.log(`\nServer started. Press Ctrl+C to terminate.
-      Serving from: ${folder}
-      Port:         ${port}
-      Time:         ${new Date}
-      Node:         ${process.version}`);
-  });
+// Allow service workers
+server.on(`request`, (req, res) => {
+  res.set(`Service-Worker-Allowed`, `/`);
+});
 
-  return server;
+// Log information when server starts
+const start = server.start(() => {
+  console.log(`\nServer started. Press Ctrl+C to terminate.
+    Serving from: ${rootPath}
+    Port:         ${port}
+    Time:         ${new Date}
+    Node:         ${process.version}`);
+});
 
-};
+// Start immediately if run from the command line
+if (require.main === module) start();
 
-// if run from the command line
-if (require.main === module) start({ port: defaultPort, folder: defaultFolder });
-
-// if run as a module
+// Export start method if run as a module
 module.exports = start;

@@ -1,5 +1,5 @@
 // documentation here: https://davidwalsh.name/javascript-debounce-function
-const debounce = (func, wait, immediate) => {
+export default (func, wait, immediate) => {
 
   let timeout;
 
@@ -20,5 +20,3 @@ const debounce = (func, wait, immediate) => {
   };
 
 };
-
-export default debounce;

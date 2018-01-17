@@ -2,6 +2,11 @@
 
 A checklist for front-end accessibility. Automate these on a project-by-project basis whenever possible.
 
+## Testing
+
+- [ ] Navigate with tab / keyboard only
+- [ ] Resize text up to 200%
+
 ## Perceivability
 
 - [ ] Everything on the page should have accompanying text

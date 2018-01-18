@@ -13,6 +13,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Label issue
 * Triage issue on the project board
 * Project Board: To Do
+* Assign issue
 * Project Board: In Progress
 * Create issue branch (from `dev`)
 

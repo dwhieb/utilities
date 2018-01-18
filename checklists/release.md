@@ -39,6 +39,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Write code to pass tests / for performance improvements
   - Run tests in all applicable browsers
 * Run through relevant [checklists][1]
+  - This only needs to be done occasionally for most checklists
 * Remove any test-related code
 * Update internal documentation (code commenting)
 * Revise external documentation (README)

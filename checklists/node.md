@@ -44,12 +44,6 @@ A checklist for server-side projects using Node (& Express).
 
 ## Express Settings
 
-- [ ] Trust proxy
-
-  ```js
-  app.enable(`trust proxy`);
-  ```
-
 - [ ] Declare Handlebars engine and file extension
 
   ```js
@@ -119,7 +113,7 @@ A checklist for server-side projects using Node (& Express).
   };
   ```
 
-- [ ] async middleware (to catch async errors)
+- [ ] Async middleware (to catch async errors)
 
   ```js
   const catchAsyncErrors = fn => (req, res, next) => {
@@ -158,9 +152,22 @@ A checklist for server-side projects using Node (& Express).
 
 ## Security
 
-- [ ] authentication (e.g. Passport)
-- [ ] Force HTTPS
-- [ ] rate limiting (e.g. express-rate-limit)
-- [ ] security middleware (e.g. helmet)
+- [ ] Authentication (e.g. Passport)
+
+- [ ] Force HTTPS (on Azure)
+
+- [ ] Rate limiting (e.g. express-rate-limit)
+
+- [ ] Security middleware (e.g. helmet)
+
+- [ ] Trust proxy
+
+  ```js
+  app.enable(`trust proxy`);
+  ```
+
+- [ ] Use the `Upgrade-Insecure-Requests` header
+  - This can be set as a Content-Security-Policy directive in helmet
+  - Also add `Upgrade-Insecure-Requests` to the `Vary` header
 
 [1]: https://www.npmjs.com/package/boom

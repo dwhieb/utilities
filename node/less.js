@@ -12,6 +12,7 @@
 
 /* eslint-disable
  func-style,
+ no-console,
  no-sync,
  require-jsdoc
 */
@@ -40,9 +41,11 @@ const getFilenames = async dir => {
 };
 
 async function convertFolder(source = ``, destination = ``) {
+  console.log(`Converting LESS files.`);
   if (!fs.existsSync(destination)) await mkdir(destination);
   const filenames = await getFilenames(source);
   await Promise.all(filenames.map(convertFile(source, destination)));
+  console.log(`LESS files converted.`);
 }
 
 const [,, src, dest] = process.argv;

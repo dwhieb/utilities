@@ -34,10 +34,18 @@
 
 - [ ] Use the Font Observer API
 
-**Resources**
+- **Resources**
   - [Web Font Loading Patterns][1]
   - [Font Loading Strategies][2]
   - [Web Font Optimization][3]
+
+## Security
+
+- [ ] Upgrade insecure requests
+
+  ```html
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  ```
 
 [1]: https://www.bramstein.com/writing/web-font-loading-patterns.html?utm_source=CSS-Weekly&utm_campaign=Issue-211&utm_medium=web
 [2]: https://www.zachleat.com/web/comprehensive-webfonts/?utm_source=CSS-Weekly&utm_campaign=Issue-224&utm_medium=web

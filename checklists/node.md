@@ -42,6 +42,8 @@ A checklist for server-side projects using Node (& Express).
   - Node
   - npm packages
 
+- [ ] Use different base URLs for each environment
+
 ## Express Settings
 
 - [ ] Declare Handlebars engine and file extension

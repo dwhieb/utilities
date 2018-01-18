@@ -49,6 +49,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
   - compile CSS (LESS)
   - compile HTML (Handlebars)
   - create documentation (JSDoc)
+  - upload (versioned) assets to storage / CDN (Azure)
 * Repeat tests as needed
 
 ## Post-Coding
@@ -80,7 +81,6 @@ A checklist for planning, developing, and publishing a release, from start to fi
 * Create GitHub release
 * Edit Zenodo release
 * Publish to npm
-* Upload assets to CDN
 * Update website
 * Write a blog post
 

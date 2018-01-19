@@ -55,6 +55,8 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 
 - [ ] Don't use block-level links. They should be inline.
 
+- [ ] Do not open links in a new tab (`target=_blank`). Users can do this on their own, and it deprives them of the ability to *not* open items in a new tab.
+
 ## Understandability
 
 - [ ] Identify the language of the page: `<html lang=en>`

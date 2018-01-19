@@ -8,12 +8,16 @@
 
 - [ ] Target local, WOFF2, and WOFF fonts
 
-- [ ] Preload critical fonts: `rel=preload as=font type=font/woff2`
+- [ ] Preload critical fonts. This needs to precede the `@font-face` directive, and the font-face declaration should come very shortly afterwards (preferably immediately following).
+
+  ```html
+  <link href=fonts/FiraSans-Light.woff2 rel=preload as=font type=font/woff2 crossorigin>
+  ```
 
 - [ ] Use common fallbacks and generic types for all font-family declarations
   - e.g. `font-family: 'Fira Sans', 'Lucida Sans', sans-serif;`
 
-- [ ] Subset fonts
+- [ ] Subset fonts (either with Font Squirrel, or by using the `unicode-range` property in the font-face declaration)
 
 - [ ] Use the Font Observer API to render fonts only when they've loaded (will cause FOUT)
 

@@ -27,6 +27,8 @@
   <!-- End article section -->
   ```
 
+- [ ] [Add subject and other information to mailto: links][5]
+
 ## Head
 
 - [ ] Include these `<meta>` tags first in your `<head>`
@@ -187,7 +189,7 @@
 - [ ] Use `noopener` with external links
 
   ```html
-  <a href=https://danielhieber.com target=_blank rel='noopener noreferrer'></a>
+  <a href=https://danielhieber.com rel='noopener noreferrer'></a>
   ```
 
 ## Resources
@@ -200,3 +202,4 @@
 [2]: https://github.com/joshbuchea/HEAD#social
 [3]: https://validator.w3.org/
 [4]: https://validator.w3.org/checklink
+[5]: https://css-tricks.com/snippets/html/mailto-links/

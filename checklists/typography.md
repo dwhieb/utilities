@@ -4,9 +4,9 @@
 
 - [ ] Avoid justified text
 
-- [ ] Use CSS `hyphens` property
+- [ ] Use CSS `hyphens` property (be language-specific if necessary)
 
-- [ ] Use a minimum line-height ("leading") of 1.5
+- [ ] Use a minimum line-height ("leading") of 1.5 on `<body>`
 
 - [ ] Use smart quotes where appropriate
 
@@ -57,13 +57,13 @@
 - [ ] Set font size to 100%
 
   ```css
-  html { font-size: 100%; }
+  body { font-size: 100%; }
   ```
 
 - [ ] Consider scaling font size to viewport, with a minimum threshold
 
   ```css
-  html { font-size: calc(1em + 1vw); }
+  body { font-size: calc(1em + 1vw); }
   ```
 
 - [ ] Use comfortable amounts of white space around all text

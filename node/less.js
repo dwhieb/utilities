@@ -17,10 +17,17 @@
  require-jsdoc
 */
 
+const CleanCSS      = require('less-plugin-clean-css');
 const fs            = require('fs');
 const less          = require('less');
 const path          = require('path');
 const { promisify } = require('util');
+
+const clean = new CleanCSS({
+  advanced: false,
+  keepBreaks: false,
+  keepSpecialComments: `*`,
+});
 
 const mkdir     = promisify(fs.mkdir);
 const readdir   = promisify(fs.readdir);
@@ -28,11 +35,18 @@ const readFile  = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 
 const convertFile = (source, destination) => async filename => {
-  const filePath = path.join(source, filename);
-  const lessData = await readFile(filePath, `utf8`);
-  const { css }  = await less.render(lessData);
-  const name     = filename.replace(`.less`, `.css`);
-  await writeFile(path.join(destination, name), css, `utf8`);
+  const filePath     = path.join(source, filename);
+  const lessData     = await readFile(filePath, `utf8`);
+  const { css, map } = await less.render(lessData, {
+    plugins:   [clean],
+    sourceMap: {
+      sourceMapFileInline: true,
+    },
+  });
+  const cssName = filename.replace(`.less`, `.css`);
+  const mapName = `${cssName}.map`;
+  await writeFile(path.join(destination, cssName), css, `utf8`);
+  await writeFile(path.join(destination, mapName), map, `utf8`);
 };
 
 const getFilenames = async dir => {
@@ -41,11 +55,11 @@ const getFilenames = async dir => {
 };
 
 async function convertFolder(source = ``, destination = ``) {
-  console.log(`Converting LESS files.`);
+  console.log(` -- Converting LESS files.`);
   if (!fs.existsSync(destination)) await mkdir(destination);
   const filenames = await getFilenames(source);
   await Promise.all(filenames.map(convertFile(source, destination)));
-  console.log(`LESS files converted.`);
+  console.log(` -- LESS files converted.`);
 }
 
 const [,, src, dest] = process.argv;

@@ -158,6 +158,8 @@ A checklist for server-side projects using Node (& Express).
 
 - [ ] Force HTTPS (on Azure)
 
+- [ ] Prevent CSURF attacks (e.g. csurf package)
+
 - [ ] Rate limiting (e.g. express-rate-limit)
 
 - [ ] Security middleware (e.g. helmet)

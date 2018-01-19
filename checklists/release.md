@@ -40,6 +40,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
   - Run tests in all applicable browsers
 * Run through relevant [checklists][1]
   - This only needs to be done occasionally for most checklists
+  - Create new issues if items in checklists should be addressed separately
 * Remove any test-related code
 * Update internal documentation (code commenting)
 * Revise external documentation (README)

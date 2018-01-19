@@ -15,7 +15,7 @@
 
 - [ ] Subset fonts
 
-- [ ] Use the Font Observer API
+- [ ] Use the Font Observer API to render fonts only when they've loaded (will cause FOUT)
 
 ## Resources
   - [Web Font Loading Patterns][1]

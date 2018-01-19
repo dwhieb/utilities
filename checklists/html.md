@@ -6,15 +6,6 @@
 
 - [ ] [Check links][4]
 
-- [ ] Include these `<meta>` tags first in your `<head>`
-
-  ```html
-  <meta charset=utf-8>
-  <meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  ```
-
-- [ ] Title element - best to limit to 55 characters
-
 - [ ] Set the `lang` attribute:
 
   ```html
@@ -24,12 +15,8 @@
 - [ ] Favicon - PNG is recommended over .ico for `<link>`s. You can (and should) also place the favicon.ico file in your root public directory.
 
   ```html
-  <link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
+  <link rel=icon type=image/png href=/path/to/favicon.png>
   ```
-
-## Informational & SEO
 
 - [ ] Add code comments explaining HTML sections (including at the end of sections)
 
@@ -40,77 +27,109 @@
   <!-- End article section -->
   ```
 
+## Head
+
+- [ ] Include these `<meta>` tags first in your `<head>`
+
+  ```html
+  <meta charset=utf-8>
+  <meta name=viewport content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  ```
+
+- [ ] Title element - best to limit to 55 characters
+
+- [ ] Set cookie if needed
+
+  ```html
+  <meta http-equiv=set-cookie content='name=value; expires=date; path=url'>
+  ```
+
 - [ ] Application Name - for apps
 
   ```html
-  <meta name="application-name" content="Application Name">
-  ```
-
-- [ ] Description
-
-  ```html
-  <meta name="description" content="A description of the page">
-  ```
-
-- [ ] Search Engines
-
-  ```html
-  <!-- Control the behavior of search engine crawling and indexing -->
-  <meta name="robots" content="index,follow"><!-- All Search Engines -->
-  <meta name="googlebot" content="index,follow"><!-- Google Specific -->
-
-  <!-- Tells Google not to show the sitelinks search box -->
-  <meta name="google" content="nositelinkssearchbox">
-
-  <!-- Tells Google not to provide a translation for this document -->
-  <meta name="google" content="notranslate">
-  ```
-
-- [ ] Search engine webmaster tools (e.g. Google, Bing)
-
-- [ ] Software used to create the site
-
-  ```html
-  <meta name="generator" content="Atom">
-  ```
-
-- [ ] Subject of the page
-
-  ```html
-  <meta name="subject" content="your document's subject">
-  ```
-
-- [ ] Age rating
-
-  ```html
-  <meta name="rating" content="General">
+  <meta name=application-name content='Application Name'>
   ```
 
 - [ ] Author information
 
   ```html
+  <meta name=author content='Daniel W. Hieber'>
+  ```
+
+  ```html
   <!-- Links to information about the author(s) of the document -->
-  <link rel="author" href="humans.txt">
+  <link rel=author href=humans.txt>
+  ```
+
+- [ ] Description
+
+  ```html
+  <meta name=description content='A description of the page'>
+  ```
+
+- [ ] Software used to create the site
+
+  ```html
+  <meta name=generator content=Atom>
+  ```
+
+- [ ] Keywords
+
+  ```html
+  <meta name=keywords content='linguistics, language'>
+  ```
+
+- [ ] Age rating
+
+  ```html
+  <meta name=rating content=general>
+  ```
+
+- [ ] Subject of the page
+
+  ```html
+  <meta name=subject content='the subject of the document'>
+  ```
+
+- [ ] Search Engines
+
+  ```html
+  <meta name=google content=nositelinkssearchbox><!-- Tells Google not to show the sitelinks search box -->
+  <meta name=google content=notranslate><!-- Tells Google not to provide a translation for this document -->
+  <meta name=googlebot content='index,follow'><!-- Google Specific -->
+  <meta name=robots content='index,follow'><!-- All Search Engines -->
+  ```
+
+- [ ] Search engine webmaster tools (e.g. Google, Bing)
+
+- [ ] [Social media tags][2]
+
+  ```html
+  <!-- Facebook -->
+  <meta property=og:description content='{{meta.description}}'>
+  <meta property=og:image content=https://danielhieber.com/img/grad_slam.jpg>
+  <meta property=og:locale content=en_US>
+  <meta property=og:title content='{{pageTitle}}'>
+  <meta property=og:type content=website>
+  <meta property=og:url content=https://danielhieber.com>
+
+  <!-- Twitter (also uses Facebook og properties) -->
+  <meta name=twitter:card content=summary>
+  <meta name=twitter:creator content=@dwhieb>
   ```
 
 - [ ] License information
 
   ```html
   <!-- Refers to a copyright statement that applies to the link's context -->
-  <link rel="license" href="copyright.html">
-  ```
-
-- [ ] [Social media tags][2]
-
-- [ ] Set cookie if needed
-
-  ```html
-  <meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
+  <link rel=license href=copyright.html>
   ```
 
 ## Performance
 
 - [ ] Inline critical CSS, minified, in a `<style>` tag in the `<head>`
+
+- [ ] Inline SVG icons and images
 
 - [ ] Load CSS files before JS files
 
@@ -150,25 +169,25 @@
 - [ ] Content Security Policy - controls where resources are loaded from
 
   ```html
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+  <meta http-equiv=Content-Security-Policy content="default-src 'self'">
   ```
 
 - [ ] Upgrade insecure requests
 
   ```html
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta http-equiv=Content-Security-Policy content=upgrade-insecure-requests>
   ```
 
 - [ ] Referrer Policy
 
   ```html
-  <meta name="referrer" content="no-referrer">
+  <meta name=referrer content=no-referrer>
   ```
 
 - [ ] Use `noopener` with external links
 
   ```html
-  <a href=https://danielhieber.com target=_blank rel="noopener noreferrer"></a>
+  <a href=https://danielhieber.com target=_blank rel='noopener noreferrer'></a>
   ```
 
 ## Resources

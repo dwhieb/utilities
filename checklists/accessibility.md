@@ -81,6 +81,8 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 
 ## Navigation
 
+- [ ] Use skip links that allow the user to skip to the main content, or to the nav if it's not already at the top of the page
+
 - [ ] Use `<nav>`, containing an unordered list `<ul>`
 
 - [ ] Place navigation elements in the same place on each page

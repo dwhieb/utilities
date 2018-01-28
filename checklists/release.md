@@ -38,6 +38,7 @@ A checklist for planning, developing, and publishing a release, from start to fi
     - Chrome audits
 * Write code to pass tests / for performance improvements
   - Run tests in all applicable browsers
+* Add assets to offline cache
 * Run through relevant [checklists][1]
   - This only needs to be done occasionally for most checklists
   - Create new issues if items in checklists should be addressed separately

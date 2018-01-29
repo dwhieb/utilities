@@ -2,6 +2,8 @@
 
 A checklist for planning, developing, and publishing a release, from start to finish.
 
+You should automate as many steps in this process as possible.
+
 ## Notes
 * Not currently using milestones
 * Keep a continuous `dev` branch
@@ -19,7 +21,12 @@ A checklist for planning, developing, and publishing a release, from start to fi
 
 ## Coding
 * Update external documentation with planned changes (README)
-* Debug with Chrome Dev Tools (use `--inspect` flag with Node)
+* Debug Node with Chrome Dev Tools (use `--inspect` flag with Node)
+* Develop in different browsers each day
+  - Chrome
+  - Edge
+  - Firefox
+* Set nodemon to run only the relevant build steps
 * Update dependencies
   - [ ] npm
   - [ ] Node

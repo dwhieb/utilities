@@ -2,8 +2,6 @@
 
 - [ ] Responsive design (mobile-first)
 
-- [ ] Use web workers to cache assets for quick loading
-
 - [ ] 404 and 500 error pages
 
 - [ ] Include a `<noscript>` fallback for assets loaded with JavaScript
@@ -13,6 +11,16 @@
 - [ ] [Font checklist][1]
 
 - [ ] [HTML checklist][3]
+
+## Performance
+
+- [ ] Defer (lazy-load) non-critical CSS and JS (with appropriate `<noscript>` fallbacks as needed)
+
+  ```html
+  <link rel=preload href=path/to/mystylesheet.css as=style onload="this.rel='stylesheet'">
+  ```
+
+- [ ] Use web workers to cache assets for quick loading
 
 ## Resources
 

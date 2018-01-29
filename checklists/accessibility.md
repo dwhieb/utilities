@@ -28,12 +28,34 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
   - [ ] Add structure to tables using `<thead>`, `<tfoot>` and `<tbody>`
   - [ ] Use the `scope=row|col` attribute for `<th>` elements
     - You could also use the `id` and `headers` attributes to link `<td>` elements to both their `<th>` header elements
+  - [ ] Use `aria-label` on `<a>` elements to have that text read instead of the text inside the link. Useful when your visual text isn't descriptive enough.
 
 - [ ] Decorative elements should be hidden to assistive technology
+  - Make non-informative images background images where possible, or leave their `alt` attribute blank (but don't omit it)
 
 - [ ] Do not rely on color alone to convey information
 
 - [ ] Use high-contrast color schemes
+
+- [ ] Use `.visually-hidden` rather than `display: none;` to hide something visually but leave it accessible to screen readers.
+
+  ```css
+  .visually-hidden {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(1px);
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    white-space: nowrap;
+    width: 1px;
+  }
+  ```
+
+- [ ] Use ARIA live regions to announce content changes
+  - Use both `role=status` and `aria-live=polite`
 
 ## Interactivity
 
@@ -41,21 +63,31 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 
 - [ ] Allow user to turn off any interruptions (server updates, notifications of live regions, etc.)
 
-- [ ] Allow user to continue where they left off
-
-- [ ] User should be able to see which element is focused
+- [ ] Allow user to continue where they left off when they reload the page
 
 - [ ] It should be clear which page the user is currently on
 
 - [ ] The purpose of a link should be clear from a) the link text, b) the text of the containing element, or c) the heading above the link
-
-- [ ] Focusing on an element should not trigger any major changes
 
 - [ ] Controls should not trigger any major changes unless the user expects them to
 
 - [ ] Don't use block-level links. They should be inline.
 
 - [ ] Do not open links in a new tab (`target=_blank`). Users can do this on their own, and it deprives them of the ability to *not* open items in a new tab.
+
+- [ ] Add keyboard shortcuts for anything that can be clicked.
+
+- [ ] Include an explicit close button on dialog boxes
+
+### Focus Management
+
+- [ ] User should be able to see which element is focused
+
+- [ ] Focusing on an element should not trigger any major changes
+
+- [ ] Make non-focusable elements (such as `<p>`, `<h1>`, `<div>`) focusable by adding a `tabindex=0` attribute. Avoid using a value other than 0.
+
+- [ ] Use JavaScript to focus on elements when it would be naturally expected (e.g. a popup dialog, or when it closes)
 
 ## Understandability
 
@@ -81,7 +113,14 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 
 ## Navigation
 
-- [ ] Use skip links that allow the user to skip to the main content, or to the nav if it's not already at the top of the page
+- [ ] Use skip links that allow the user to skip to the main content, or to the nav if it's not already at the top of the page. You can make this visible only on focus (cf. GitHub).
+
+  ```html
+  <header role=banner>
+    <h1>Page Title</h1>
+    <a href=#main>Skip to main content</a>
+  </header>
+  ```
 
 - [ ] Use `<nav>`, containing an unordered list `<ul>`
 

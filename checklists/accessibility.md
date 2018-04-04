@@ -79,6 +79,8 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 
 - [ ] Include an explicit close button on dialog boxes
 
+- [ ] [Use accessible download links][2] (rather than download buttons)
+
 ### Focus Management
 
 - [ ] User should be able to see which element is focused
@@ -145,3 +147,4 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 - [ ] Clicking on the current page's link should take user to the `<main>` element (e.g. `href=#main|home|etc.`) rather than reloading the page (unless it's a single-page app, where the reader saying 'same page' isn't quite appropriate)
 
 [1]: https://www.amazon.com/Inclusive-Design-Patterns-Heydon-Pickering-ebook/dp/B01MAXK8XR/ref=sr_1_2?ie=UTF8&qid=1516318100&sr=8-2&keywords=inclusive+design
+[2]: https://css-tricks.com/building-good-download-button/

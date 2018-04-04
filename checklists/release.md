@@ -18,6 +18,7 @@ You should automate as many steps in this process as possible.
 * Assign issue
 * Project Board: In Progress
 * Create issue branch (from `dev`)
+* Set environment variable(s) (e.g. `set NODE_ENV=localhost`)
 
 ## Coding
 * Update external documentation with planned changes (README)
@@ -52,6 +53,7 @@ You should automate as many steps in this process as possible.
 * Remove any test-related code
 * Update internal documentation (code commenting)
 * Revise external documentation (README)
+* Change environment variables if needed (e.g. `set NODE_ENV=development|production`)
 * Run build process, potentially including
   - transpile JS (Babel)
   - bundle modules (Webpack)
@@ -83,6 +85,8 @@ You should automate as many steps in this process as possible.
 * Delete issue branch
 * Repeat testing on development server
 * Project Board: Completed
+* Rerun build process if needed, using production environment settings
+  - `set NOD_ENV=production`
 * Open a pull request from `dev` into `master`
 * Add commit message (name & version number)
 * Merge pull request into `master`

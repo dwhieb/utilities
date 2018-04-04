@@ -131,6 +131,14 @@ A checklist for server-side projects using Node (& Express).
   });
   ```
 
+- [ ] Generic error handling for uncaught exceptions
+
+  ```js
+  process.on(`uncaughtException` err => {
+    // log and report error
+  });
+  ```
+
 - [ ] Standardized error handling
 
   - [ ] Standardized error messages (e.g. with [Boom][1])

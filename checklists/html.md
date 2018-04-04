@@ -139,9 +139,14 @@
 
   - `rel=preload` - tells browser to download but not apply style
   - `onload` - sets link to stylesheet once it's done loading
+  - include a `<noscript>` fallback
 
   ```html
   <link rel=preload href=styles.css as=style onload="this.rel='stylesheet';">
+
+  <noscript>
+    <link rel=stylesheet href=styles.css>
+  </noscript>
   ```
 
 - [ ] Place `href` attribute first in an element

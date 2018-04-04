@@ -1,5 +1,5 @@
 /**
- * Catches any asynchronous errors in Express middleware, and passes them along the middleware chain as usual. Best to use this when defining the middleware, rather than in each individual route.
+ * Catches any asynchronous errors in Express middleware, and passes them along the middleware chain as usual. Cannot be used as general middleware - must be attached to specific routes.
  * @param  {Function} fn The middleware function to wrap
  * @return {Function}
  * @example

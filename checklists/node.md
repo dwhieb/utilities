@@ -44,6 +44,8 @@ A checklist for server-side projects using Node (& Express).
 
 - [ ] Use different base URLs for each environment
 
+- [ ] Use `npm ci` command when testing on Travis CI or other continuous integration
+
 ## Express Settings
 
 - [ ] Declare Handlebars engine and file extension

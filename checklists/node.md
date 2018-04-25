@@ -44,7 +44,7 @@ A checklist for server-side projects using Node (& Express).
 
 - [ ] Use different base URLs for each environment
 
-- [ ] Use `npm ci` command when testing on Travis CI or other continuous integration
+- [ ] [Use `npm ci` command when testing on Travis CI or other continuous integration][2]
 
 ## Express Settings
 
@@ -185,3 +185,4 @@ A checklist for server-side projects using Node (& Express).
   - Also add `Upgrade-Insecure-Requests` to the `Vary` header
 
 [1]: https://www.npmjs.com/package/boom
+[2]: https://medium.com/@tomastrajan/how-to-speed-up-continuous-integration-build-with-new-npm-ci-and-package-lock-json-7647f91751a

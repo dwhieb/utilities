@@ -44,7 +44,14 @@ A checklist for server-side projects using Node (& Express).
 
 - [ ] Use different base URLs for each environment
 
-- [ ] [Use `npm ci` command when testing on Travis CI or other continuous integration][2]
+- [ ] Use `npm ci` command when testing on Travis CI
+  - This speeds up install time significantly
+  - Include the following in your `travis.yaml` file:
+
+  ```yaml
+  install:
+    - npm ci
+  ```
 
 ## Express Settings
 
@@ -117,7 +124,7 @@ A checklist for server-side projects using Node (& Express).
   };
   ```
 
-- [ ] Async middleware (to catch async errors)
+- [ ] Use middleware to catch async errors
 
   ```js
   const catchAsyncErrors = fn => (req, res, next) => {
@@ -150,6 +157,17 @@ A checklist for server-side projects using Node (& Express).
 - [ ] Provide an option to console log requested URL with an environment variable
 
   - The log should happen after static files are sent
+
+- [ ] Shut down gracefully when a process is killed
+
+  ```js
+  process.on(`SIGTERM`, () => {
+    console.log(`Shutting down process.`);
+    server.stop();
+    .then(...);
+    // close any other connections or child processes here
+  });
+  ```
 
 ## package.json
 
@@ -185,4 +203,3 @@ A checklist for server-side projects using Node (& Express).
   - Also add `Upgrade-Insecure-Requests` to the `Vary` header
 
 [1]: https://www.npmjs.com/package/boom
-[2]: https://medium.com/@tomastrajan/how-to-speed-up-continuous-integration-build-with-new-npm-ci-and-package-lock-json-7647f91751a

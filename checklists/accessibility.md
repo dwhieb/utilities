@@ -59,6 +59,8 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 
 ## Interactivity
 
+- [ ] Include a `<noscript>` fallback for assets loaded with JavaScript
+
 - [ ] Allow user to stop sound or adjust its volume
 
 - [ ] Allow user to turn off any interruptions (server updates, notifications of live regions, etc.)

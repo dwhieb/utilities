@@ -5,6 +5,7 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 ## Resources
 
 - [ ] [Inclusive Design Patterns][1]
+- [ ] [Creating Accessible Tables][3]
 
 ## Testing
 
@@ -33,7 +34,7 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 - [ ] Decorative elements should be hidden to assistive technology
   - Make non-informative images background images where possible, or leave their `alt` attribute blank (but don't omit it)
 
-- [ ] Do not rely on color alone to convey information
+- [ ] Do not rely on color alone to convey information or state changes
 
 - [ ] Use high-contrast color schemes
 
@@ -85,7 +86,9 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 
 ### Focus Management
 
-- [ ] User should be able to see which element is focused
+- [ ] User should be able to see which element is focused. If it's interactive, it should have a focus style. Use the `:focus` and `:active` selectors.
+
+- [ ] Resting, focused, and active styles should all be distinguished.
 
 - [ ] Focusing on an element should not trigger any major changes
 
@@ -150,3 +153,4 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 
 [1]: https://www.amazon.com/Inclusive-Design-Patterns-Heydon-Pickering-ebook/dp/B01MAXK8XR/ref=sr_1_2?ie=UTF8&qid=1516318100&sr=8-2&keywords=inclusive+design
 [2]: https://css-tricks.com/building-good-download-button/
+[3]: https://inclusive-components.design/data-tables/?utm_source=CSS-Weekly&utm_campaign=Issue-309&utm_medium=web

@@ -14,6 +14,7 @@
 
 - [PageSpeed Insights][6]
 - [Web Page Test][8]
+- [Sonarwhal][10]
 
 ## Performance
 
@@ -44,6 +45,7 @@
 ## Resources
 
 - [Front End Checklist][4]
+- [Lazy Loading Images & Videos][9]
 
 [1]: https://github.com/dwhieb/utilities/blob/master/checklists/fonts.md
 [2]: https://github.com/dwhieb/utilities/blob/master/checklists/accessibility.md
@@ -53,3 +55,5 @@
 [6]: https://developers.google.com/speed/pagespeed/insights/
 [7]: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/images/image_13.png
 [8]: https://www.webpagetest.org
+[9]: https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/?utm_source=CSS-Weekly&utm_campaign=Issue-310&utm_medium=web
+[10]: https://sonarwhal.com/

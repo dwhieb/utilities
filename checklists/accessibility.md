@@ -120,6 +120,10 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
 
 ## Navigation
 
+- [ ] Consider adding an extra Accessibility Menu specifically designed to be simple and navigable with a keyboard, with a consistent keyboard command to access it from anywhere on the site (e.g. `opt + /` is what Facebook does).
+
+- [ ] Consider adding keyboard shortcuts (with instructions on which shortcuts do what). If the site has certain key pages, mapping them to hotkeys may also be a good idea.
+
 - [ ] Use skip links that allow the user to skip to the main content, or to the nav if it's not already at the top of the page. You can make this visible only on focus (cf. GitHub).
 
   ```html

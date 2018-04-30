@@ -1,6 +1,8 @@
 # JavaScript Checklist
 
-## Latest Syntax
+## Latest Syntax & Features
+
+- [ ] Use `element.closest()` to traverse the DOM upwards
 
 - [ ] Use Object rest and spread properties
 

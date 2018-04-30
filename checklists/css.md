@@ -3,6 +3,9 @@
 * Sort declarations and rules alphabetically
 * Use declarations just once
 * Prefer classes over IDs or elements (unless the element is part of a component)
+* Customize scrolling behavior:
+  - `scroll-behavior: smooth;` - Prevents jumps when same-page links are clicked
+  - `overscroll-behavior: contain;` - Prevents page from scrolling when the bottom of the current element is reached
 
 ## Button Styling
 

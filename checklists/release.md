@@ -84,7 +84,7 @@ You should automate as many steps in this process as possible.
   - TEST
 - [ ] Repeat testing on development server
 - [ ] Rerun build process if needed, using production environment settings
-  - `set NOD_ENV=production`
+  - `set NODE_ENV=production`
 - [ ] Open a pull request from `dev` into `master`
 - [ ] Merge (not squash) pull request into `master`
 - [ ] Project Board: Completed & close issue (should happen automatically)

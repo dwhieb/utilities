@@ -83,7 +83,7 @@ You should automate as many steps in this process as possible.
   - TEST
 - [ ] Code review
 - [ ] Address code review comments (repeat **Coding** steps)
-- [ ] Merge pull request into `dev`
+- [ ] Merge pull request into `dev` using a squash commit
 - [ ] Delete issue branch
 - [ ] Repeat testing on development server
 - [ ] Project Board: Completed

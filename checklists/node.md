@@ -2,6 +2,10 @@
 
 A checklist for server-side projects using Node (& Express).
 
+## Resources
+
+- [Node.js Best Practices][3]
+
 ## app.js
 
 - [ ] Do initialization / configuration in separate files, which then export the ready-to-use object. Some possible cases:
@@ -26,6 +30,8 @@ A checklist for server-side projects using Node (& Express).
   - Time
   - Node Version (`Node`)
   - Environment (`Env`)
+
+- [ ] Separate `server.js` from `app.js`
 
 ## Development
 
@@ -67,11 +73,13 @@ A checklist for server-side projects using Node (& Express).
   app.use(express.static(path.join(__dirname, `/public`)));
   ```
 
-## Logging & Error Handling
+## Logging
 
 - [ ] Monitoring (e.g. Application Insights)
   - uptime
   - memory (watch for leaks)
+
+- [ ] Use a mature logger (like Winston)
 
 - [ ] Log requests (at beginning of waterfall, but after static files)
 
@@ -109,6 +117,16 @@ A checklist for server-side projects using Node (& Express).
   };
   ```
 
+## Error Handling
+
+- [ ] Distinguish operational (client) vs. programmer (server) errors
+
+- [ ] Handle errors in a centralized place, and propagate all other errors to that location, converting error messages from third-party services. Error-handling middleware should itself pass the error to a centralized module, since not every error will happen during the HTTP request waterfall, or could be an uncaught promise exception.
+
+- [ ] Use standardized error messages (e.g. with [Boom][1])
+
+- [ ] Document possible API errors (using Swagger)
+
 - [ ] 404 and 500 error handlers (should come last in the waterfall for Express)
 
   ```js
@@ -140,19 +158,18 @@ A checklist for server-side projects using Node (& Express).
   });
   ```
 
-- [ ] Generic error handling for uncaught exceptions
+- [ ] Generic error handling for uncaught exceptions ()
 
   ```js
+  process.on('unhandledRejection', (reason, p) => {
+    // I just caught an unhandled promise rejection, since we already have fallback handler for unhandled errors (see below), let throw and let that one handle that
+    throw reason;
+  });
+
   process.on(`uncaughtException` err => {
     // log and report error
   });
   ```
-
-- [ ] Standardized error handling
-
-  - [ ] Standardized error messages (e.g. with [Boom][1])
-  - [ ] `res.error` middleware
-  - [ ] convert errors from third-party services
 
 - [ ] Provide an option to console log requested URL with an environment variable
 
@@ -169,6 +186,10 @@ A checklist for server-side projects using Node (& Express).
   });
   ```
 
+- [ ] Retry HTTP requests as appropriate (use a for-loop with async functions and a `maxRequests` variable, [like this][2])
+
+- [ ] Listen to error events on any objects that emit them
+
 ## package.json
 
 - [ ] The `"main"` field should point to the entry point for the app (usually `app.js`)
@@ -179,6 +200,8 @@ A checklist for server-side projects using Node (& Express).
 - [ ] Don't serve static files from Node
   - Option 1: Use a CDN / Blob Storage
   - Option 2: Proxy server
+
+- [ ] Avoid `require()` statements that block execution (i.e. place them at the top level of your code)
 
 ## Security
 
@@ -202,4 +225,14 @@ A checklist for server-side projects using Node (& Express).
   - This can be set as a Content-Security-Policy directive in helmet
   - Also add `Upgrade-Insecure-Requests` to the `Vary` header
 
+- [ ] Cookies should use `sameSite` and `httpOnly` (prevents the cookie from being accessed by client-side JavaScript) settings by default. Use `secure` optionally.
+
+- [ ] Use the Helmet package to set security headers
+
+## Testing
+
+- [ ] Test for all possible / documented operational (client) errors, not just positive scenarios. (**NB:** It should not be possible to test for programmer (server) errors.)
+
 [1]: https://www.npmjs.com/package/boom
+[2]: https://blog.risingstack.com/mastering-async-await-in-nodejs/
+[3]: https://github.com/i0natan/nodebestpractices/blob/master/README.md

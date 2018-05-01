@@ -1,5 +1,13 @@
 # JavaScript Checklist
 
+## General Guidelines
+
+> Be conservative in what you do, liberal in what you accept.
+
+- Allow your API to handle flexible inputs, but always provide consistent outputs.
+
+- Fail fast: Allow flexible inputs, but still validate them when they are unpredictable, or user input.
+
 ## Latest Syntax & Features
 
 - [ ] Use `element.closest()` to traverse the DOM upwards
@@ -36,3 +44,7 @@
 - [ ] Use the unicode (`u`) and dotAll (`s`) flags by default
 
 - [ ] Used named capture groups in Regular Expressions whenever possible
+
+## Miscellaneous
+
+- [ ] Use `void` for IIFEs

@@ -11,29 +11,30 @@ You should automate as many steps in this process as possible.
 * Do not allow commits to the `master` branch without an override
 
 ## Pre-Coding
-* Open an issue
-* Label issue
-* Triage issue on the project board
-* Project Board: To Do
-* Assign issue
-* Project Board: In Progress
-* Create issue branch (from `dev`)
-* Set environment variable(s) (e.g. `set NODE_ENV=localhost`)
+- [ ] Open an issue
+- [ ] Label issue
+- [ ] Triage issue on the project board
+- [ ] Project Board: To Do
+- [ ] Assign issue
+- [ ] Project Board: In Progress
+- [ ] Create issue branch (from `dev`)
+- [ ] Design the API for any new code or changes to code
+- [ ] Set environment variable(s) (e.g. `set NODE_ENV=localhost`)
 
 ## Coding
-* Update external documentation with planned changes (README)
-* Debug Node with Chrome Dev Tools (use `--inspect` flag with Node)
-* Develop in different browsers each day
+- [ ] Update external documentation with planned changes (README)
+- [ ] Debug Node with Chrome Dev Tools (use `--inspect` flag with Node)
+- [ ] Develop in different browsers each day
   - Chrome
   - Edge
   - Firefox
-* Set nodemon to run only the relevant build steps
-* Update dependencies
+- [ ] Set nodemon to run only the relevant build steps
+- [ ] Update dependencies
   - [ ] npm
   - [ ] Node
   - [ ] npm packages
   - [ ] other third-party scripts
-* Write tests
+- [ ] Write tests
   - unit tests
   - functional tests
   - online/offline tests
@@ -44,34 +45,37 @@ You should automate as many steps in this process as possible.
     - network waterfall
     - security audit
     - Chrome audits
-* Write code to pass tests / for performance improvements
+- [ ] Write code to pass tests / for performance improvements
   - Run tests in all applicable browsers
-* Add assets to offline cache
-* Run through relevant [checklists][1]
+  - Check code coverage
+- [ ] Lint code
+- [ ] Add assets to offline cache
+- [ ] Run through relevant [checklists][1]
   - This only needs to be done occasionally for most checklists
   - Create new issues if items in checklists should be addressed separately
-* Remove any test-related code
-* Update internal documentation (code commenting)
-* Revise external documentation (README)
-* Change environment variables if needed (e.g. `set NODE_ENV=development|production`)
-* Run build process, potentially including
+- [ ] Remove any test-related code
+- [ ] Update internal documentation (code commenting)
+- [ ] Revise external documentation (README)
+- [ ] Change environment variables if needed (e.g. `set NODE_ENV=development|production`)
+- [ ] Run build process, potentially including
   - transpile JS (Babel)
   - bundle modules (Webpack)
   - compile CSS (LESS)
   - compile HTML (Handlebars)
   - create documentation (JSDoc)
   - upload (versioned) assets to storage / CDN (Azure)
-* Repeat tests as needed
+- [ ] Repeat tests as needed
 
 ## Post-Coding
-* Stop nodemon
-* Increment version number
-* Add commit message closing the issue
-* Commit to issue branch
-* Update environment variables on Travis CI, development, and production server
-* Create pull request from issue branch into `dev` / `master`
-* Add commit message (each commit to `dev` should have one of these, and an issue number)
+- [ ] Stop nodemon
+- [ ] Increment version number
+- [ ] Add commit message closing the issue
+- [ ] Commit to issue branch
+- [ ] Update environment variables on Travis CI, development, and production server
+- [ ] Create pull request from issue branch into `dev` / `master`
+- [ ] Add commit message. Each commit to `dev` should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
   - CHANGE
+  - CONTENT
   - DEPS
   - DEV
   - DOCS
@@ -79,22 +83,22 @@ You should automate as many steps in this process as possible.
   - NEW
   - PERF
   - TEST
-* Code review
-* Address code review comments (repeat **Coding** steps)
-* Merge pull request into `dev` / `master`
-* Delete issue branch
-* Repeat testing on development server
-* Project Board: Completed
-* Rerun build process if needed, using production environment settings
+- [ ] Code review
+- [ ] Address code review comments (repeat **Coding** steps)
+- [ ] Merge pull request into `dev` / `master`
+- [ ] Delete issue branch
+- [ ] Repeat testing on development server
+- [ ] Project Board: Completed
+- [ ] Rerun build process if needed, using production environment settings
   - `set NOD_ENV=production`
-* Open a pull request from `dev` into `master`
-* Add commit message (name & version number)
-* Merge pull request into `master`
-* Repeat testing on production
-* Create GitHub release
-* Edit Zenodo release
-* Publish to npm
-* Update website
-* Write a blog post
+- [ ] Open a pull request from `dev` into `master`
+- [ ] Add commit message (name & version number)
+- [ ] Merge pull request into `master`
+- [ ] Repeat testing on production
+- [ ] Create GitHub release
+- [ ] Edit Zenodo release
+- [ ] Publish to npm
+- [ ] Update website
+- [ ] Write a blog post
 
 [1]: https://github.com/dwhieb/utilities/tree/master/checklists

@@ -54,7 +54,7 @@
   [href^="http"]:not([href*="danielhieber.com"])::after {}
   ```
 
-- [ ] Set font size to 100%
+- [ ] Set font size to 100% (this allows the user to set their preferred default font size in the browser)
 
   ```css
   body { font-size: 100%; }

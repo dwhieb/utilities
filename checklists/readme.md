@@ -7,7 +7,8 @@ A checklist for writing README files. Items appear roughly in the order they sho
   - What the project does or achieves (focus on why someone might use it)
   - Who the project is useful to
 - [ ] Demo / Example (link)
-- [ ] Owner / Author & License
+- [ ] Owner / Author
+- [ ] License
 - [ ] Citation
 - [ ] Badges
   - [ ] version / release

@@ -6,6 +6,8 @@
 
 - [ ] [Check links][4]
 
+- [ ] [Check meta tags][6]
+
 - [ ] Set the `lang` attribute:
 
   ```html
@@ -29,6 +31,8 @@
 
 - [ ] [Add subject and other information to mailto: links][5]
 
+- [ ] Don't include inline JavaScript or CSS (except for critical CSS)
+
 ## Head
 
 - [ ] Include these `<meta>` tags first in your `<head>`
@@ -38,7 +42,7 @@
   <meta name=viewport content='width=device-width, initial-scale=1, shrink-to-fit=no'>
   ```
 
-- [ ] Title element - best to limit to 55 characters
+- [ ] Title element (best to limit to 55 characters)
 
 - [ ] Set cookie if needed
 
@@ -127,50 +131,6 @@
   <link rel=license href=copyright.html>
   ```
 
-## Performance
-
-- [ ] Inline critical CSS, minified, in a `<style>` tag in the `<head>`
-
-- [ ] Inline SVG icons and images
-
-- [ ] Load CSS files before JS files
-
-- [ ] Load non-critical stylesheets asynchronously
-
-  - `rel=preload` - tells browser to download but not apply style
-  - `onload` - sets link to stylesheet once it's done loading
-  - include a `<noscript>` fallback
-
-  ```html
-  <link rel=preload href=styles.css as=style onload="this.rel='stylesheet';">
-
-  <noscript>
-    <link rel=stylesheet href=styles.css>
-  </noscript>
-  ```
-
-- [ ] Place `href` attribute first in an element
-
-- [ ] Specify global prefetch policy - you can also specify this on a case-by-case basis using `rel=dns-prefetch`
-
-  ```html
-  <meta http-equiv="x-dns-prefetch-control" content="off|on">
-  ```
-
-- [ ] Prefetch resources that are known to be used in the near future
-
-  ```html
-  <link rel="prefetch" href="/images/big.jpeg">
-  ```
-
-- [ ] Prerender pages that are known to be loaded in the near future
-
-  ```html
-  <link rel="prerender" href="http://css-tricks.com">
-  ```
-
-- [ ] Prefer Handlebars comments over HTML comments (where appropriate)
-
 ## Security
 
 - [ ] Content Security Policy - controls where resources are loaded from
@@ -208,3 +168,4 @@
 [3]: https://validator.w3.org/
 [4]: https://validator.w3.org/checklink
 [5]: https://css-tricks.com/snippets/html/mailto-links/
+[6]: http://www.heymeta.com/?utm_source=CSS-Weekly&utm_campaign=Issue-299&utm_medium=web

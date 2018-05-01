@@ -80,6 +80,7 @@ You should automate as many steps in this process as possible.
   - FIX
   - NEW
   - PERF
+  - REFACTOR
   - TEST
 - [ ] Repeat testing on development server
 - [ ] Rerun build process if needed, using production environment settings

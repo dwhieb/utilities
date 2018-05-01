@@ -83,7 +83,6 @@ You should automate as many steps in this process as possible.
   - NEW
   - PERF
   - TEST
-- [ ] Delete issue branch
 - [ ] Repeat testing on development server
 - [ ] Project Board: Completed
 - [ ] Rerun build process if needed, using production environment settings
@@ -91,6 +90,7 @@ You should automate as many steps in this process as possible.
 - [ ] Open a pull request from `dev` into `master`
 - [ ] Merge (not squash) pull request into `master`
 - [ ] Repeat testing on production
+- [ ] Delete issue branch
 - [ ] Create GitHub release
 - [ ] Edit Zenodo release
 - [ ] Publish to npm

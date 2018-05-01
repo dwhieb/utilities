@@ -19,7 +19,7 @@ You should automate as many steps in this process as possible.
 - [ ] Project Board: In Progress
 - [ ] Create issue branch (from `dev`)
 - [ ] Design the API for any new code or changes to code
-- [ ] Open pull request to track progress on issue
+- [ ] Open pull request from issue branch into `dev` to track progress on issue
 
 ## Coding
 - [ ] Update external documentation with planned changes (README)
@@ -70,11 +70,8 @@ You should automate as many steps in this process as possible.
 ## Post-Coding
 - [ ] Stop nodemon
 - [ ] Increment version number
-- [ ] Add commit message closing the issue
-- [ ] Commit to issue branch
 - [ ] Update environment variables on Travis CI, development, and production server
-- [ ] Create pull request from issue branch into `dev` / `master`
-- [ ] Add commit message. Each commit to `dev` should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
+- [ ] Add commit message to pull request. Each commit to `dev` should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
   - CHANGE
   - CONTENT
   - DEPS
@@ -86,15 +83,14 @@ You should automate as many steps in this process as possible.
   - TEST
 - [ ] Code review
 - [ ] Address code review comments (repeat **Coding** steps)
-- [ ] Merge pull request into `dev` / `master`
+- [ ] Merge pull request into `dev`
 - [ ] Delete issue branch
 - [ ] Repeat testing on development server
 - [ ] Project Board: Completed
 - [ ] Rerun build process if needed, using production environment settings
   - `set NOD_ENV=production`
 - [ ] Open a pull request from `dev` into `master`
-- [ ] Add commit message (name & version number)
-- [ ] Merge pull request into `master`
+- [ ] Merge (not squash) pull request into `master`
 - [ ] Repeat testing on production
 - [ ] Create GitHub release
 - [ ] Edit Zenodo release

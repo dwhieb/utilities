@@ -71,7 +71,7 @@ You should automate as many steps in this process as possible.
 - [ ] Stop nodemon
 - [ ] Increment version number
 - [ ] Update environment variables on Travis CI, development, and production server
-- [ ] Add commit message to pull request. Each commit to `dev` should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
+- [ ] Merge pull request into `dev` using a squash commit. Each commit to `dev` should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
   - CHANGE
   - CONTENT
   - DEPS
@@ -83,7 +83,6 @@ You should automate as many steps in this process as possible.
   - TEST
 - [ ] Code review
 - [ ] Address code review comments (repeat **Coding** steps)
-- [ ] Merge pull request into `dev` using a squash commit
 - [ ] Delete issue branch
 - [ ] Repeat testing on development server
 - [ ] Project Board: Completed

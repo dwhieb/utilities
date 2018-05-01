@@ -7,8 +7,6 @@ You should automate as many steps in this process as possible.
 ## Notes
 * Not currently using milestones
 * Keep a continuous `dev` branch
-* Only use Squash & Merge commits for `master` branch
-* Do not allow commits to the `master` branch without an override
 
 ## Pre-Coding
 - [ ] Open an issue

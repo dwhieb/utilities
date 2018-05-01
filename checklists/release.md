@@ -84,11 +84,11 @@ You should automate as many steps in this process as possible.
   - PERF
   - TEST
 - [ ] Repeat testing on development server
-- [ ] Project Board: Completed
 - [ ] Rerun build process if needed, using production environment settings
   - `set NOD_ENV=production`
 - [ ] Open a pull request from `dev` into `master`
 - [ ] Merge (not squash) pull request into `master`
+- [ ] Project Board: Completed & close issue (should happen automatically)
 - [ ] Repeat testing on production
 - [ ] Delete issue branch
 - [ ] Create GitHub release

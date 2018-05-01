@@ -19,10 +19,11 @@ You should automate as many steps in this process as possible.
 - [ ] Project Board: In Progress
 - [ ] Create issue branch (from `dev`)
 - [ ] Design the API for any new code or changes to code
-- [ ] Set environment variable(s) (e.g. `set NODE_ENV=localhost`)
+- [ ] Open pull request to track progress on issue
 
 ## Coding
 - [ ] Update external documentation with planned changes (README)
+- [ ] Set environment variable(s) (e.g. `set NODE_ENV=localhost`)
 - [ ] Debug Node with Chrome Dev Tools (use `--inspect` flag with Node)
 - [ ] Develop in different browsers each day
   - Chrome

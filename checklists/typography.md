@@ -12,9 +12,9 @@
 
   ```
   &#8216; = opening single quote
-  &#8217 = closing single quote
-  &#8220 = opening double quote
-  &#8221 = closing double quote
+  &#8217; = closing single quote
+  &#8220; = opening double quote
+  &#8221; = closing double quote
   ```
 
 - [ ] Use en dashes for series (`&#8211;`)

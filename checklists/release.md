@@ -18,6 +18,7 @@ You should automate as many steps in this process as possible.
 - [ ] Create issue branch (from `dev`)
 - [ ] Design the API for any new code or changes to code
 - [ ] Open pull request from issue branch into `dev` to track progress on issue
+  - Will need to increment version number or make some other minor change first
 
 ## Coding
 - [ ] Update external documentation with planned changes (README)

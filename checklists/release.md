@@ -48,7 +48,6 @@ You should automate as many steps in this process as possible.
 - [ ] Write code to pass tests / for performance improvements
   - Run tests in all applicable browsers
   - Check code coverage
-- [ ] Lint code
 - [ ] Add assets to offline cache
 - [ ] Run through relevant [checklists][1]
   - This only needs to be done occasionally for most checklists

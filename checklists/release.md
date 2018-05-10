@@ -46,8 +46,9 @@ You should automate as many steps in this process as possible.
     - security audit
     - Chrome audits
 - [ ] Write code to pass tests / for performance improvements
-  - Run tests in all applicable browsers
-  - Check code coverage
+  - [ ] Run tests in all applicable browsers
+  - [ ] Check code coverage
+  - [ ] Run `npm audit` (security audit)
 - [ ] Add assets to offline cache
 - [ ] Run through relevant [checklists][1]
   - This only needs to be done occasionally for most checklists

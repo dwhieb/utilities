@@ -69,7 +69,7 @@ You should automate as many steps in this process as possible.
 ## Post-Coding
 - [ ] Stop nodemon
 - [ ] Update environment variables on Travis CI, development, and production server
-- [ ] Code review
+- [ ] Code review (create pull request if you haven't already)
 - [ ] Address code review comments (repeat **Coding** steps)
 - [ ] Merge pull request into `dev` using a squash commit. Each commit to `dev` should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
   - CHANGE

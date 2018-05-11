@@ -85,6 +85,7 @@ You should automate as many steps in this process as possible.
   - REFACTOR
   - TEST
 - [ ] Repeat testing on development server
+- [ ] Delete issue branch
 - [ ] Repeat steps with additional issues
 
 ## Post-Development
@@ -96,7 +97,6 @@ You should automate as many steps in this process as possible.
 - [ ] Merge (not squash) pull request into `master`
 - [ ] Project Board: Completed & close issue (should happen automatically)
 - [ ] Repeat testing on production
-- [ ] Delete issue branch
 - [ ] Create GitHub release
 - [ ] Edit Zenodo release
 - [ ] Publish to npm

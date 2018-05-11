@@ -86,7 +86,7 @@ You should automate as many steps in this process as possible.
 - [ ] Repeat steps with additional issues
 
 ## Post-Development
-- [ ] Increment version number
+- [ ] Increment version number on `dev` branch
 - [ ] Rerun build process if needed, using production environment settings
   - `set NODE_ENV=production`
 - [ ] Open a pull request from `dev` into `master`

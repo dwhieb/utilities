@@ -92,6 +92,7 @@ You should automate as many steps in this process as possible.
 - [ ] Rerun build process if needed, using production environment settings
   - `set NODE_ENV=production`
 - [ ] Open a pull request from `dev` into `master`
+- [ ] Write a clean commit message for the commit, explaining all the changes for this release, and associating them with issues
 - [ ] Merge (not squash) pull request into `master`
 - [ ] Project Board: Completed & close issue (should happen automatically)
 - [ ] Repeat testing on production

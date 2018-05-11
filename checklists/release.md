@@ -68,7 +68,6 @@ You should automate as many steps in this process as possible.
 
 ## Post-Coding
 - [ ] Stop nodemon
-- [ ] Increment version number
 - [ ] Update environment variables on Travis CI, development, and production server
 - [ ] Code review
 - [ ] Address code review comments (repeat **Coding** steps)
@@ -84,6 +83,7 @@ You should automate as many steps in this process as possible.
   - REFACTOR
   - TEST
 - [ ] Repeat testing on development server
+- [ ] Increment version number
 - [ ] Rerun build process if needed, using production environment settings
   - `set NODE_ENV=production`
 - [ ] Open a pull request from `dev` into `master`

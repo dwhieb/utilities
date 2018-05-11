@@ -83,6 +83,9 @@ You should automate as many steps in this process as possible.
   - REFACTOR
   - TEST
 - [ ] Repeat testing on development server
+- [ ] Repeat steps with additional issues
+
+## Post-Development
 - [ ] Increment version number
 - [ ] Rerun build process if needed, using production environment settings
   - `set NODE_ENV=production`

@@ -6,7 +6,8 @@ You should automate as many steps in this process as possible.
 
 ## Notes
 * Not currently using milestones
-* Keep a continuous `dev` branch
+* Keep a continuous `dev` branch for non-versioned projects
+* Create version branches rather than a `dev` branch for versioned projects
 
 ## Pre-Coding
 - [ ] Open an issue
@@ -15,9 +16,9 @@ You should automate as many steps in this process as possible.
 - [ ] Project Board: To Do
 - [ ] Assign issue
 - [ ] Project Board: In Progress
-- [ ] Create issue branch (from `dev`)
+- [ ] Create issue branch (from `dev` / version branch)
 - [ ] Design the API for any new code or changes to code
-- [ ] Open pull request from issue branch into `dev` to track progress on issue
+- [ ] Open pull request from issue branch into `dev` / version branch to track progress on issue
   - Will need to increment version number or make some other minor change first
 
 ## Coding
@@ -71,7 +72,7 @@ You should automate as many steps in this process as possible.
 - [ ] Update environment variables on Travis CI, development, and production server
 - [ ] Code review (create pull request if you haven't already)
 - [ ] Address code review comments (repeat **Coding** steps)
-- [ ] Merge pull request into `dev` using a squash commit. Each commit to `dev` should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
+- [ ] Merge pull request into `dev` / version branch using a squash commit for non-versioned projects, and a squash and merge commit for versioned projects. Each commit to `dev` / version branch should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
   - ACCESS
   - BUILD
   - CHANGE
@@ -89,15 +90,16 @@ You should automate as many steps in this process as possible.
 - [ ] Repeat steps with additional issues
 
 ## Post-Development
-- [ ] Increment version number on `dev` branch and make a `VERSION` commit
+- [ ] Increment version number on version branch and make a `VERSION` commit
 - [ ] Rerun build process if needed, using production environment settings
   - `set NODE_ENV=production`
-- [ ] Open a pull request from `dev` into `master`
+- [ ] Open a pull request from `dev` / version branch into `master`
 - [ ] Write a clean commit message for the commit, explaining all the changes for this release, and associating them with issues
-- [ ] Squash & merge `dev` into `master`
+- [ ] Versioned projects: Squash & merge version branch into `master`
+- [ ] Non-versioned projects: Merge (not squash) `dev` into `master`
 - [ ] Project Board: Completed & close issue (should happen automatically)
 - [ ] Repeat testing on production
-- [ ] Delete and recreate `dev` branch
+- [ ] Delete version branch
 - [ ] Create GitHub release
 - [ ] Edit Zenodo release
 - [ ] Publish to npm

@@ -16,6 +16,7 @@ You should automate as many steps in this process as possible.
 - [ ] Project Board: To Do
 - [ ] Assign issue
 - [ ] Project Board: In Progress
+- [ ] Create version branch if necessary (for versioned projects only)
 - [ ] Create issue branch (from `dev` / version branch)
 - [ ] Design the API for any new code or changes to code
 - [ ] Open pull request from issue branch into `dev` / version branch to track progress on issue

@@ -97,7 +97,7 @@ You should automate as many steps in this process as possible.
 - [ ] Open a pull request from `dev` / version branch into `master`
 - [ ] Write a clean commit message for the commit, explaining all the changes for this release, and associating them with issues
 - [ ] Versioned projects: Squash & merge version branch into `master`
-- [ ] Non-versioned projects: Merge (not squash) `dev` into `master`
+- [ ] Non-versioned projects: Rebase (???) `dev` into `master`
 - [ ] Project Board: Completed & close issue (should happen automatically)
 - [ ] Repeat testing on production
 - [ ] Delete version branch

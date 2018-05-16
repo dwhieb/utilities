@@ -73,7 +73,7 @@ You should automate as many steps in this process as possible.
 - [ ] Update environment variables on Travis CI, development, and production server
 - [ ] Code review (create pull request if you haven't already)
 - [ ] Address code review comments (repeat **Coding** steps)
-- [ ] Merge pull request into `dev` / version branch using a squash commit for non-versioned projects, and a squash and merge commit for versioned projects. Each commit to `dev` / version branch should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
+- [ ] Merge pull request into `dev` / version branch using a squash commit. Each commit to `dev` / version branch should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
   - ACCESS
   - BUILD
   - CHANGE

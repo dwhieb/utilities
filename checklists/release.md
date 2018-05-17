@@ -11,7 +11,7 @@ You should automate as many steps in this process as possible.
 ## Pre-Coding
 - [ ] Open an issue
 - [ ] Label issue
-- [ ] Triage issue on the project board
+- [ ] Triage issue on the Project Board
 - [ ] Project Board: To Do
 - [ ] Assign issue
 - [ ] Project Board: In Progress

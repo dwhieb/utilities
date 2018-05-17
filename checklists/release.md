@@ -18,8 +18,6 @@ You should automate as many steps in this process as possible.
 - [ ] Create version branch if necessary (for versioned projects only)
 - [ ] Create issue branch (from `dev` / version branch)
 - [ ] Design the API for any new code or changes to code
-- [ ] Open pull request from issue branch into `dev` / version branch to track progress on issue
-  - Will need to increment version number or make some other minor change first
 
 ## Coding
 - [ ] Update external documentation with planned changes (README)
@@ -70,7 +68,8 @@ You should automate as many steps in this process as possible.
 ## Post-Coding
 - [ ] Stop nodemon
 - [ ] Update environment variables on Travis CI, development, and production server
-- [ ] Code review (create pull request if you haven't already)
+- [ ] Open pull request from issue branch into `dev` / version branch
+- [ ] Code review
 - [ ] Address code review comments (repeat **Coding** steps)
 - [ ] Merge pull request into `dev` / version branch using a squash commit. Each commit to `dev` / version branch should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
   - ACCESS

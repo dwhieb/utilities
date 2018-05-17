@@ -5,9 +5,8 @@ A checklist for planning, developing, and publishing a release, from start to fi
 You should automate as many steps in this process as possible.
 
 ## Notes
-* Not currently using milestones
-* Keep a continuous `dev` branch for non-versioned projects
-* Create version branches rather than a `dev` branch for versioned projects
+* Non-versioned projects: Keep a continuous `dev` branch
+* Versioned projects: Create a version branch for a collection of issues (add a Milestone if necessary)
 
 ## Pre-Coding
 - [ ] Open an issue

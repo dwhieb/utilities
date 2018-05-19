@@ -55,7 +55,7 @@ You should automate as many steps in this process as possible.
 - [ ] Remove any test-related code
 - [ ] Update internal documentation (code commenting)
 - [ ] Revise external documentation (README)
-- [ ] Change environment variables if needed (e.g. `set NODE_ENV=development|production`)
+- [ ] Change environment variables if needed (e.g. `set NODE_ENV=development`; not `production` yet)
 - [ ] Run build process, potentially including
   - transpile JS (Babel)
   - bundle modules (Webpack)

@@ -1,5 +1,8 @@
 # CSS Checklist
 
+## Tools
+* [CSS Debugger](https://medium.freecodecamp.org/heres-my-favorite-weird-trick-to-debug-css-88529aa5a6a3)
+
 ## General
 * Aim for responsive, mobile-first design
 * Sort declarations and rules alphabetically

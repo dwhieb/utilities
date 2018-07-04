@@ -48,6 +48,7 @@
       {{#each CVTypes}}
         <li><a href=#{{id}}>{{header}}</a></li>
       {{/each}}
+    </ol>
 
   </nav>
   ```

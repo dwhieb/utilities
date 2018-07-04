@@ -12,4 +12,7 @@
 
 - [ ] Keep the menu label or description in view when the dropdown is open.
 
+- [ ] Follow the tips in [this article from CSS Tricks][2] on how to design accessible dropdowns using CSS
+
 [1]: https://www.nngroup.com/articles/mega-menus-work-well/
+[2]: https://css-tricks.com/solved-with-css-dropdown-menus/

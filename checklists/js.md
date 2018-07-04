@@ -10,6 +10,8 @@
 
 ## Latest Syntax & Features
 
+- [ ] Use `fs.promises` for promisified version of filesystem operations
+
 - [ ] Use `element.closest()` to traverse the DOM upwards
 
 - [ ] Use Object rest and spread properties

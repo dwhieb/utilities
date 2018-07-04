@@ -132,6 +132,7 @@
   ```
 
 ## Security
+Be careful not to set these on both the server and in the HTML. This makes it very difficult to debug. Do one or the other.
 
 - [ ] Content Security Policy - controls where resources are loaded from
 

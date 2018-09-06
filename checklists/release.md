@@ -7,6 +7,7 @@ You should automate as many steps in this process as possible.
 ## Notes
 * Non-versioned projects: Keep a continuous `dev` branch
 * Versioned projects: Create a version branch for a collection of issues (add a Milestone if necessary)
+* Website: Swap slots rather than deploying directly from `master` branch to server
 
 ## Pre-Coding
 - [ ] Open an issue
@@ -68,6 +69,7 @@ You should automate as many steps in this process as possible.
 ## Post-Coding
 - [ ] Stop nodemon
 - [ ] Update environment variables on Travis CI, development, and production server
+  - Do not update environment variables on production server if you are swapping slots with the development server
 - [ ] Open pull request from issue branch into `dev` / version branch
 - [ ] Code review
 - [ ] Address code review comments (repeat **Coding** steps)

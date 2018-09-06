@@ -92,13 +92,15 @@ You should automate as many steps in this process as possible.
 
 ## Post-Development
 - [ ] Increment version number on version branch and make a `VERSION` commit
-- [ ] Rerun build process if needed, using production environment settings
+- [ ] Rerun build process (on `dev`) if needed, using production environment settings
   - `set NODE_ENV=production`
+- [ ] (Website) Push production code to development server and test it
 - [ ] Open a pull request from `dev` / version branch into `master`
 - [ ] Write a clean commit message for the commit, explaining all the changes for this release, and associating them with issues
 - [ ] Versioned projects: Squash & merge version branch into `master`
 - [ ] Non-versioned projects: Merge (not squash) `dev` into `master`
 - [ ] Project Board: Completed & close issue (should happen automatically)
+- [ ] (Website) Swap development and production slots
 - [ ] Repeat testing on production
 - [ ] Delete version branch
 - [ ] Create GitHub release

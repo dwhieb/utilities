@@ -4,10 +4,22 @@ A checklist for planning, developing, and publishing a release, from start to fi
 
 You should automate as many steps in this process as possible.
 
-## Notes
-* Non-versioned projects: Keep a continuous `dev` branch
-* Versioned projects: Create a version branch for a collection of issues (add a Milestone if necessary)
-* Website: Swap slots rather than deploying directly from `master` branch to server
+## Branching
+* Non-versioned projects:
+  - Create release branches
+  - Code on release branches should be production-ready
+  - Each commit to the release branch should be a single issue with a category label
+  - Commits are merged onto `master` branch with each release
+* Versioned projects:
+  - Create branches for each version
+  - Code on version branches should be production-ready
+  - Each commit to a version branch should be a single issue with a category label
+  - Commits are squashed onto `master` branch with each release
+* Websites:
+  - `master` branch deploys to `staging` slot, and then slots are swapped
+  - Create a branch and `dev` slot for each issue
+  - Issue branches deploy to the `dev` slot for testing purposes
+  - Issue branches are squashed onto the `master` branch
 
 ## Pre-Coding
 - [ ] Open an issue
@@ -16,13 +28,16 @@ You should automate as many steps in this process as possible.
 - [ ] Project Board: To Do
 - [ ] Assign issue
 - [ ] Project Board: In Progress
-- [ ] Create version branch if necessary (for versioned projects only)
-- [ ] Create issue branch (from `dev` / version branch)
+- [ ] Create branch
+  - Non-versioned projects: Create an issue branch off of `dev`
+  - Versioned projects: Create a version branch (if necessary), then an issue branch
+  - Websites: Create an issue branch and `dev` slot, deploying from issue branch
+- [ ] (Versioned projects) Make a `VERSION` commit
 - [ ] Design the API for any new code or changes to code
 
 ## Coding
 - [ ] Update external documentation with planned changes (README)
-- [ ] Set environment variable(s) (e.g. `set NODE_ENV=localhost`)
+- [ ] Set local environment variable(s) (`set NODE_ENV=localhost`)
 - [ ] Debug Node with Chrome Dev Tools (use `--inspect` flag with Node)
 - [ ] Develop in different browsers each day
   - Chrome
@@ -56,7 +71,7 @@ You should automate as many steps in this process as possible.
 - [ ] Remove any test-related code
 - [ ] Update internal documentation (code commenting)
 - [ ] Revise external documentation (README)
-- [ ] Change environment variables if needed (e.g. `set NODE_ENV=development`; not `production` yet)
+- [ ] Set development environment variables (`set NODE_ENV=development`)
 - [ ] Run build process, potentially including
   - transpile JS (Babel)
   - bundle modules (Webpack)
@@ -64,16 +79,10 @@ You should automate as many steps in this process as possible.
   - compile HTML (Handlebars)
   - create documentation (JSDoc)
   - upload (versioned) assets to storage / CDN (Azure)
-- [ ] Repeat tests as needed
+- [ ] Repeat tests locally
+- [ ] Repeat tests on `dev` server
 
-## Post-Coding
-- [ ] Stop nodemon
-- [ ] Update environment variables on Travis CI, development, and production server
-  - Do not update environment variables on production server if you are swapping slots with the development server
-- [ ] Open pull request from issue branch into `dev` / version branch
-- [ ] Code review
-- [ ] Address code review comments (repeat **Coding** steps)
-- [ ] Merge pull request into `dev` / version branch using a squash commit. Each commit to `dev` / version branch should have one of the categories below, an issue number, and a message explaining *why* and *what* was done (not how).
+## Categories
   - ACCESS
   - BUILD
   - CHANGE
@@ -86,23 +95,31 @@ You should automate as many steps in this process as possible.
   - PERF
   - REFACTOR
   - TEST
+
+## Post-Coding
+- [ ] Stop nodemon
+- [ ] Update environment variables on Travis CI, development, and staging server (not production)
+- [ ] Set production environment variables (`set NODE_ENV=production`)
+- [ ] Run build process
+- [ ] Run tests locally
+- [ ] Open pull request
+  - Non-versioned projects: issue branch > `dev`
+  - Versioned projects: issue branch > version branch
+  - Websites: issue branch > `master`
+- [ ] Code review
+- [ ] Address code review comments (repeat **Coding** steps)
+- [ ] Merge pull request with a squash commit (all project types)
+  - Include a category label
+  - Explain *why* and *what* was done (not how)
 - [ ] Delete issue branch
-- [ ] Repeat testing on development server
+- [ ] (Websites) Repeat testing on `staging` server
 - [ ] Repeat steps with additional issues
 
-## Post-Development
-- [ ] Increment version number on version branch and make a `VERSION` commit
-- [ ] Rerun build process (on `dev`) if needed, using production environment settings
-  - `set NODE_ENV=production`
-- [ ] (Website) Push production code to development server and test it
-- [ ] Open a pull request from `dev` / version branch into `master`
-- [ ] Write a clean commit message for the commit, explaining all the changes for this release, and associating them with issues
-- [ ] Versioned projects: Squash & merge version branch into `master`
-- [ ] Non-versioned projects: Merge (not squash) `dev` into `master`
+## Post-Development & Release
 - [ ] Project Board: Completed & close issue (should happen automatically)
-- [ ] (Website) Swap development and production slots
+- [ ] (Website) Swap staging and production slots
 - [ ] Repeat testing on production
-- [ ] Delete version branch
+- [ ] Delete version / release branch
 - [ ] Create GitHub release
 - [ ] Edit Zenodo release
 - [ ] Publish to npm

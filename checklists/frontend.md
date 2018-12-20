@@ -25,6 +25,8 @@
 
 - [ ] Time to interactive should occur within 5s (on a slow 3G network with 400ms RTT and 400kkps transfer speed) and under 2s for repeat visits
 
+- [ ] Use Optimize.js
+
 ### Lazy-Loading Assets
 
 - [ ] Lazy-load assets with `dns-prefetch`, `preconnect`, `prefetch`, or `preload`. Use `preload` when you're confident the resource will be used on the page, and `prefetch` when it *may* be used on the page. `prefetch` works during idle times, while `preload` grabs the resource as soon as possible. [More info][13].

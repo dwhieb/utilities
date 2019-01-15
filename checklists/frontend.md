@@ -1,6 +1,6 @@
 # Front End Checklist
 
-- [Front End Checklist][4]
+- [ ] [Front End Checklist][4]
 
 - [ ] [Accessibility checklist][2]
 

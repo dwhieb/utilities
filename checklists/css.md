@@ -4,12 +4,29 @@
 * [CSS Debugger](https://medium.freecodecamp.org/heres-my-favorite-weird-trick-to-debug-css-88529aa5a6a3)
 
 ## General
+
 * Aim for responsive, mobile-first design
+
 * Sort declarations and rules alphabetically
+
 * Use declarations just once
-* Prefer classes over IDs or elements (unless the element is part of a component)
+
+* Always use classes rather than IDs, elements, or attribute selectors. Classes force you to provide a semantic, readable label for *what* the component is.
+
 * Use semantic class names (e.g. `cup-handle`) rather than descriptive ones (e.g. `red`)
-* Design should be responsive both vertically and horizontally (don't let items take up too much/litte vertical screen space, on narrow or wide devices)
+
+* Design should be responsive both vertically and horizontally (don't let items take up too much/litte vertical  screen space, on narrow or wide devices)
+
+* Don't use a CSS reset or universally-applied styles
+
+  - If a style needs to be applied, use a class
+  - All styling is applied to some layout / component - make it explicit
+
+* Avoid nested selectors except for:
+
+  - state changes
+  - theme changes
+  - sub-components
 
 ## Miscellaneous
 

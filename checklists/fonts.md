@@ -54,6 +54,7 @@
   - [Web Font Optimization][3]
   - [Font Style Matcher][6]
   - [Font Events][7]
+  - [Variable Fonts][8]
 
 [1]: https://www.bramstein.com/writing/web-font-loading-patterns.html?utm_source=CSS-Weekly&utm_campaign=Issue-211&utm_medium=web
 [2]: https://www.zachleat.com/web/comprehensive-webfonts/?utm_source=CSS-Weekly&utm_campaign=Issue-224&utm_medium=web
@@ -62,3 +63,4 @@
 [5]: https://css-tricks.com/font-display-masses/
 [6]: https://meowni.ca/font-style-matcher/
 [7]: https://jonsuh.com/blog/font-loading-with-font-events/
+[8]: https://v-fonts.com/

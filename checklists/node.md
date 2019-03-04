@@ -205,6 +205,9 @@ A checklist for server-side projects using Node (& Express).
 
 ## Security
 
+### Resources
+* [Security Best Practices](https://medium.com/@nodepractices/were-under-attack-23-node-js-security-best-practices-e33c146cb87d)
+
 - [ ] Authentication (e.g. Passport)
 
 - [ ] Force HTTPS (on Azure)
@@ -228,6 +231,8 @@ A checklist for server-side projects using Node (& Express).
 - [ ] Cookies should use `sameSite` and `httpOnly` (prevents the cookie from being accessed by client-side JavaScript) settings by default. Use `secure` optionally.
 
 - [ ] Use the Helmet package to set security headers
+
+- [ ] Use [`eslint-plugin-security`](https://github.com/nodesecurity/eslint-plugin-security) to lint for security issues early
 
 ## Testing
 

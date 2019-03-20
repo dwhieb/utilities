@@ -240,4 +240,4 @@ A checklist for server-side projects using Node (& Express).
 
 [1]: https://www.npmjs.com/package/boom
 [2]: https://blog.risingstack.com/mastering-async-await-in-nodejs/
-[3]: https://github.com/i0natan/nodebestpractices/blob/master/README.md
+[3]: https://github.com/i0natan/nodebestpractices

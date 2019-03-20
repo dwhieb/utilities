@@ -49,6 +49,8 @@ A checklist for front-end accessibility. Automate these on a project-by-project 
   }
   ```
 
+- [ ] Use the `hidden` attribute on elements to hide them from both screen readers and on screen
+
 - [ ] Use ARIA live regions to announce content changes
   - Use both `role=status` and `aria-live=polite`
 

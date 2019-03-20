@@ -15,6 +15,8 @@
 
 * Use semantic class names (e.g. `cup-handle`) rather than descriptive ones (e.g. `red`)
 
+* Separate code for appearance and layout. _appearance_ refers to how the item looks, while _layout_ refers to how that content is styled in relation to the content around it (or how content is styled in relation to each other).
+
 * Design should be responsive both vertically and horizontally (don't let items take up too much/litte vertical  screen space, on narrow or wide devices)
 
 * Don't use a CSS reset or universally-applied styles

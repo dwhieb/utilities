@@ -1,5 +1,17 @@
 # Fonts Checklist
 
+## Resources
+
+* [Font Events](https://jonsuh.com/blog/font-loading-with-font-events/)
+* [Font Feature Settings Demo](https://sparanoid.com/lab/opentype-features/?utm_source=CSS-Weekly&utm_campaign=Issue-330&utm_medium=web)
+* [Font Style Matcher](https://meowni.ca/font-style-matcher/)
+* [Variable Fonts](https://v-fonts.com/)
+* [Web Font Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?utm_source=CSS-Weekly&utm_campaign=Issue-233&utm_medium=web)
+* [Web Font Loading Checklist](https://www.zachleat.com/web/font-checklist/)
+* [Web Font Loading Patterns](https://www.bramstein.com/writing/web-font-loading-patterns.html?utm_source=CSS-Weekly&utm_campaign=Issue-211&utm_medium=web)
+* [Web Font Loading Recipes](https://github.com/zachleat/web-font-loading-recipes)
+* [Web Font Loading Strategies](https://www.zachleat.com/web/comprehensive-webfonts/)
+
 ## Performance
 
 - [ ] Serve the font from a CDN
@@ -48,19 +60,6 @@
 
 - [ ] Target local, WOFF, and WOFF2 fonts for broad browser support
 
-## Resources
-  - [Web Font Loading Patterns][1]
-  - [Font Loading Strategies][2]
-  - [Web Font Optimization][3]
-  - [Font Style Matcher][6]
-  - [Font Events][7]
-  - [Variable Fonts][8]
 
-[1]: https://www.bramstein.com/writing/web-font-loading-patterns.html?utm_source=CSS-Weekly&utm_campaign=Issue-211&utm_medium=web
-[2]: https://www.zachleat.com/web/comprehensive-webfonts/?utm_source=CSS-Weekly&utm_campaign=Issue-224&utm_medium=web
-[3]: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?utm_source=CSS-Weekly&utm_campaign=Issue-233&utm_medium=web
 [4]: https://css-tricks.com/three-techniques-performant-custom-font-usage/
 [5]: https://css-tricks.com/font-display-masses/
-[6]: https://meowni.ca/font-style-matcher/
-[7]: https://jonsuh.com/blog/font-loading-with-font-events/
-[8]: https://v-fonts.com/

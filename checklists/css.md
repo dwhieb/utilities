@@ -30,6 +30,47 @@
   - theme changes
   - sub-components
 
+## Images
+
+- Cheating:
+
+```css
+.image {
+  background-image: url('image.png');
+  background-size:  cover;
+}
+```
+
+- Future:
+
+```css
+.image {
+  height:     10rem;
+  object-fit: cover;
+  width:      10rem;
+}
+```
+
+- Simple:
+
+```css
+.image {
+  height:    auto;
+  max-width: 10rem;
+  width:     100%;
+}
+```
+
+- `<picture>` tag with `srcset`
+
+```html
+<picture>
+  <source media="(max-width: 799px)" srcset="elva-480w.jpg">
+  <source media="(min-width: 800px)" srcset="elva-800w.jpg">
+  <img src="elva-800w.jpg">
+</picture>
+```
+
 ## Miscellaneous
 
 * Customize scrolling behavior:

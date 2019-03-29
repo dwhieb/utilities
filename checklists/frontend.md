@@ -16,10 +16,11 @@
 
 ## Performance
 
-- [Lazy Loading Images & Videos][9]
-- [PageSpeed Insights][6]
-- [Web Page Test][8]
-- [Sonarwhal][10]
+- [Improving Client-Side Performance](https://tj.ie/improving-client-side-performance/?utm_source=CSS-Weekly&utm_campaign=Issue-330&utm_medium=web)
+- [Lazy Loading Images & Videos](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/?utm_source=CSS-Weekly&utm_campaign=Issue-310&utm_medium=web)
+- [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+- [Web Page Test](https://www.webpagetest.org)
+- [Sonarwhal](https://sonarwhal.com/)
 
 - [ ] First meaningful paint should occur within 1s
 
@@ -114,11 +115,9 @@
 [3]: https://github.com/dwhieb/utilities/blob/master/checklists/html.md
 [4]: https://github.com/thedaviddias/Front-End-Checklist
 [5]: https://developers.google.com/web/updates/2016/04/intersectionobserver
-[6]: https://developers.google.com/speed/pagespeed/insights/
+
 [7]: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/images/image_13.png
-[8]: https://www.webpagetest.org
-[9]: https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/?utm_source=CSS-Weekly&utm_campaign=Issue-310&utm_medium=web
-[10]: https://sonarwhal.com/
+
 [11]: https://securityheaders.com/
 [12]: https://observatory.mozilla.org/
 [13]: https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf

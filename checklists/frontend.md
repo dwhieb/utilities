@@ -28,6 +28,8 @@
 
 - [ ] Use Optimize.js
 
+- [ ] Try the [idle until urgent](https://philipwalton.com/articles/idle-until-urgent/) method
+
 ### Lazy-Loading Assets
 
 - [ ] Lazy-load assets with `dns-prefetch`, `preconnect`, `prefetch`, or `preload`. Use `preload` when you're confident the resource will be used on the page, and `prefetch` when it *may* be used on the page. `prefetch` works during idle times, while `preload` grabs the resource as soon as possible. [More info][13].

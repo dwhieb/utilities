@@ -33,6 +33,16 @@ A checklist for server-side projects using Node (& Express).
 
 - [ ] Separate `server.js` from `app.js`
 
+- [ ] Shut down gracefully on errors:
+
+```js
+process.on('uncaughtException', err => {
+  console.log('something terribly wrong happened', err);
+
+  server.close(() => process.exit(1));
+});
+```
+
 ## Development
 
 - [ ] Use Nodemon (with `--inspect` flag)

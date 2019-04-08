@@ -10,28 +10,7 @@
 
 ## Latest Syntax & Features
 
-- [ ] Use `fs.promises` for promisified version of filesystem operations
-
 - [ ] Use `element.closest()` to traverse the DOM upwards
-
-- [ ] Use Object rest and spread properties
-
-  ```js
-  const data1  = { a: 1, b: 2 };
-  const data2  = { c: 3, d: 4 };
-  const clone  = { ...data };
-  const merged = { ...data1, ...data2 };
-  ```
-
-- [ ] Use async iterators when appropriate (Node.js v10.x)
-
-  ```js
-  const readStream = fs.createReadStream('filename.txt');
-
-  let data = ``;
-
-  for await (const chunk of readStream) data += chunk;
-  ```
 
 ## Development
 
@@ -46,7 +25,3 @@
 - [ ] Use the unicode (`u`) and dotAll (`s`) flags by default
 
 - [ ] Used named capture groups in Regular Expressions whenever possible
-
-## Miscellaneous
-
-- [ ] Use `void` for IIFEs

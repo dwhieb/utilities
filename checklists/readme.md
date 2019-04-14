@@ -2,7 +2,7 @@
 
 A checklist for writing README files. Items appear roughly in the order they should in the README.
 
-- [ ] Title - linked to repo / homepage
+- [ ] Title (do not link to repo / homepage - breaks title bar in most browsers)
 - [ ] Description
   - What the project does or achieves (focus on why someone might use it)
   - Who the project is useful to

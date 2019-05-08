@@ -1,5 +1,9 @@
 # Testing
 
+## Resources
+
+[Testing Best Practices](https://medium.com/@me_37286/yoni-goldberg-javascript-nodejs-testing-best-practices-2b98924c9347)
+
 - [ ] linting
 - [ ] license check ([license checker](https://www.npmjs.com/package/license-checker))
 - [ ] unit testing

@@ -1,5 +1,7 @@
 # Typography Checklist
 
+- [ ] Good hyphenation: http://clagnut.com/blog/2395?utm_source=CSS-Weekly&utm_campaign=Issue-356&utm_medium=web
+
 - [ ] A measure (paragraph) width of about 60rem is best (this is a maximum). The measure will increase with the font size if rem units are used.
 
 - [ ] Avoid justified text

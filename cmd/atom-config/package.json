@@ -2,9 +2,9 @@
   "name": "atom-config",
   "private": true,
   "version": "0.1.0",
-  "main": "index.mjs",
+  "main": "index.js",
   "bin": {
-    "atom-config": "./index.mjs"
+    "atom-config": "./index.js"
   },
   "preferGlobal": true
 }

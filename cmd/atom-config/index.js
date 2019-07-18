@@ -1,24 +1,59 @@
 #!/usr/bin/env node
 
-const { copyFile } = require(`fs`).promises;
+const { copyFile }  = require(`fs`).promises;
+const createSpinner = require(`ora`);
+const path          = require(`path`);
 
-const backupConfigPath = `C:/Users/dwhie/Coding/config.cson`;
-const atomConfigPath   = `C:/Users/dwhie/.atom/config.cson`;
+const backupConfigDir = `C:/Users/dwhie/Coding`;
+const atomConfigDir   = `C:/Users/dwhie/.atom`;
 
-const [,,procedure] = process.argv;
+const [,, procedure] = process.argv;
 
 if (!procedure) {
   throw new Error(`Specify a procedure: "backup" or "restore"`);
 }
 
+const filenames = [
+  `config.cson`,
+  `github.cson`,
+  `keymap.cson`,
+  `snippets.cson`,
+];
+
+function backupFile(filename) {
+  return copyFile(path.join(atomConfigDir, filename), path.join(backupConfigDir, filename));
+}
+
+function restoreFile(filename) {
+  return copyFile(path.join(backupConfigDir, filename), path.join(atomConfigDir, filename));
+}
+
 async function backup() {
-  await copyFile(atomConfigPath, backupConfigPath);
-  console.log(`Atom config backed up successfully.`);
+
+  const spinner = createSpinner(`Backing up files`).start();
+
+  try {
+    await Promise.all(filenames.map(backupFile));
+  } catch (e) {
+    return spinner.fail(e.message);
+  }
+
+  spinner.succeed(`Files backed up successfully`);
+
 }
 
 async function restore() {
-  await copyFile(backupConfigPath, atomConfigPath);
-  console.log(`Atom config restored successfully.`);
+
+  const spinner = createSpinner(`Restoring files`).start();
+
+  try {
+    await Promise.all(filenames.map(restoreFile));
+  } catch (e) {
+    return spinner.fail(e.message);
+  }
+
+  spinner.succeed(`Files restored successfully`);
+
 }
 
 const procedures = {

@@ -3,7 +3,7 @@
 */
 
 // NOTE:
-// - for loop is faster that forEach
+// - for loop is faster than forEach
 // - declaring swap ouside selectionSort is faster
 
 const swap = (array, firstIndex, secondIndex) => {
